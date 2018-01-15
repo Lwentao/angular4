@@ -1,0 +1,2016 @@
+
+
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset=UTF-8"UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/><meta name="renderer" content="webkit"/><meta property="qc:admins" content="15317273575564615446375"/><meta property="og:image" content="https://static.segmentfault.com/v-5a55e741/global/img/touch-icon.png"/><meta name="viewport"
+              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/><meta name="alexaVerifyID" content="LkzCRJ7rPEUwt6fVey2vhxiw1vQ"/><meta name="apple-itunes-app" content="app-id=958101793, app-argument="><title>phpçˆ¬è™«ï¼šçŸ¥ä¹ç”¨æˆ·æ•°æ®çˆ¬å–å’Œåˆ†æ - é è°±å´”å°æ‹½ - SegmentFault</title><meta name="description" content="èƒŒæ™¯è¯´æ˜ï¼šå°æ‹½åˆ©ç”¨phpçš„curlå†™çš„çˆ¬è™«ï¼Œå®éªŒæ€§çš„çˆ¬å–äº†çŸ¥ä¹5wç”¨æˆ·çš„åŸºæœ¬ä¿¡æ¯ï¼›åŒæ—¶ï¼Œé’ˆå¯¹çˆ¬å–çš„æ•°æ®ï¼Œè¿›è¡Œäº†ç®€å•çš„åˆ†æå‘ˆç°ã€‚demo åœ°å€ phpçš„spiderä»£ç å’Œç”¨æˆ·dashboardçš„å±•ç°ä»£ç ï¼Œæ•´ç†åä¸Šä¼ githubï¼Œåœ¨ä¸ªäººåšå®¢..."/><meta name="keywords" content="ç½‘é¡µçˆ¬è™«,shell,css,javascript,php"/><link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="SegmentFault"/><link rel="shortcut icon" href="https://static.segmentfault.com/v-5a55e741/global/img/favicon.ico"/><link rel="apple-touch-icon" href="https://static.segmentfault.com/v-5a55e741/global/img/touch-icon.png"><meta name="msapplication-TileColor" content="#009a61"/><meta name="msapplication-square150x150logo" content="https://static.segmentfault.com/v-5a55e741/global/img/touch-icon.png"/><link rel="alternate" type="application/atom+xml" title="SegmentFault æœ€æ–°é—®é¢˜" href="/feeds/questions"><link rel="alternate" type="application/atom+xml" title="SegmentFault æœ€æ–°æ–‡ç« " href="/feeds/blogs"><link rel="stylesheet" href="../../static.segmentfault.com/v-5a55e741/global/css/global.css" tppabs="https://static.segmentfault.com/v-5a55e741/global/css/global.css"/><link rel="stylesheet" href="../../static.segmentfault.com/v-5a55e741/blog/css/blog.css" tppabs="https://static.segmentfault.com/v-5a55e741/blog/css/blog.css"/><link rel="stylesheet" href="../../static.segmentfault.com/v-5a55e741/global/css/responsive.css" tppabs="https://static.segmentfault.com/v-5a55e741/global/css/responsive.css"/></head><body data-mod="blog"
+    class="blog-post "><!--[if lt IE 9]><div class="alert alert-danger topframe" role="alert">ä½ çš„æµè§ˆå™¨å®åœ¨<strong>å¤ªå¤ªå¤ªå¤ªå¤ªå¤ªæ—§äº†</strong>ï¼Œæ”¾å­¦åˆ«èµ°ï¼Œå‡çº§å®Œæµè§ˆå™¨å†è¯´ <a target="_blank" class="alert-link" href="javascript:if(confirm('http://browsehappy.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://browsehappy.com/'" tppabs="http://browsehappy.com/">ç«‹å³å‡çº§</a></div><![endif]--><img id="icon4weChat" style="height: 0;width: 0;" data-src="../../static.segmentfault.com/v-5a55e741/global/img/touch-icon-512.png" tppabs="https://static.segmentfault.com/v-5a55e741/global/img/touch-icon-512.png"><div class="global-nav sf-header sf-header--index"><nav class="container nav"><div class="visible-xs header-response"><a href="javascript:if(confirm('https://segmentfault.com/search  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/search'" tppabs="https://segmentfault.com/search" style="display:block"><i class="fa fa-search" aria-hidden="true"></i></a><div class="sf-header__logo sf-header__logo--response"><h1><a href="javascript:if(confirm('https://segmentfault.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/'" tppabs="https://segmentfault.com/" style="height:24px; background-size: auto 24px;"></a></h1></div><a href="javascript:if(confirm('https://segmentfault.com/user/login  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/user/login'" tppabs="https://segmentfault.com/user/login" class="pull-right login-btn"><i class="fa fa-user" aria-hidden="true"></i></a><div class="bottom-nav"><div class="opts"><a class="opts-group " href="javascript:if(confirm('https://segmentfault.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/'" tppabs="https://segmentfault.com/"><i class="fa fa-home" aria-hidden="true"></i><span>é¦–é¡µ</span></a><a class="opts-group " href="javascript:if(confirm('https://segmentfault.com/questions  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/questions'" tppabs="https://segmentfault.com/questions"><i class="fa fa-comments" aria-hidden="true"></i><span>é—®ç­”</span></a><a class="opts-group " href="javascript:if(confirm('https://segmentfault.com/news  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/news'" tppabs="https://segmentfault.com/news"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>å¤´æ¡</span></a><a class="opts-group active" href="javascript:if(confirm('https://segmentfault.com/blogs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blogs'" tppabs="https://segmentfault.com/blogs"><i class="fa fa-pencil-square" aria-hidden="true"></i><span>ä¸“æ </span></a><a class="opts-group " href="javascript:if(confirm('https://segmentfault.com/lives  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/lives'" tppabs="https://segmentfault.com/lives"><i class="fa fa-play-circle" aria-hidden="true"></i><span>è®²å ‚</span></a><div class="opts-group"><div class="btn-group dropup"><i class="fa fa-bars dropdown hoverDropdown" data-toggle="dropdown" aria-hidden="true"><span>æ›´å¤š</span></i><ul class="dropdown-menu"><li><a href="javascript:if(confirm('https://segmentfault.com/jobs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/jobs'" tppabs="https://segmentfault.com/jobs">èŒä½</a></li><li><a href="javascript:if(confirm('https://segmentfault.com/events  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/events'" tppabs="https://segmentfault.com/events">æ´»åŠ¨</a></li><li><a href="javascript:if(confirm('https://segmentfault.com/tags  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/tags'" tppabs="https://segmentfault.com/tags">æ ‡ç­¾</a></li><li><a href="javascript:if(confirm('https://segmentfault.com/badges  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/badges'" tppabs="https://segmentfault.com/badges">å¾½ç« </a></li></ul></div></div></div></div></div><script>
+mobileScroll(
+    function(direction) { 
+        if (direction === 'down') {
+            document.querySelector('.bottom-nav').classList.add('hidden')
+        } else {
+            document.querySelector('.bottom-nav').classList.remove('hidden')
+        }
+    }
+);    
+function mobileScroll( fn ) {
+    var beforeScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+        fn = fn || function() {};
+    window.addEventListener("scroll", function() {
+        var afterScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+            delta = afterScrollTop - beforeScrollTop;
+        if( delta === 0 ) return false;
+        fn( delta > 0 ? "down" : "up" );
+        beforeScrollTop = afterScrollTop;
+    }, false);
+}
+</script><div class="row hidden-xs"><div class="col-sm-8 col-md-9 col-lg-9"><div class="sf-header__logo"><h1><a href="javascript:if(confirm('https://segmentfault.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/'" tppabs="https://segmentfault.com/">SegmentFault</a></h1></div><div><ul class="menu list-inline pull-left hidden-xs"><li class="menu__item"><a href="javascript:if(confirm('https://segmentfault.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/'" tppabs="https://segmentfault.com/" class="">é¦–é¡µ</a></li><li class="menu__item"><a href="javascript:if(confirm('https://segmentfault.com/questions  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/questions'" tppabs="https://segmentfault.com/questions" class="">é—®ç­”</a></li><li class="menu__item"><a href="javascript:if(confirm('https://segmentfault.com/news  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/news'" tppabs="https://segmentfault.com/news" class="">å¤´æ¡</a></li><li class="menu__item"><a href="javascript:if(confirm('https://segmentfault.com/blogs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blogs'" tppabs="https://segmentfault.com/blogs" class="active-nav">ä¸“æ </a></li><li class="menu__item"><a href="javascript:if(confirm('https://segmentfault.com/lives  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/lives'" tppabs="https://segmentfault.com/lives" class="">è®²å ‚</a></li><li class="menu__item menu__item--more dropdown"><a href="##" class="dropdown-toggle dropdownBtn" data-toggle="dropdown">
+                                        å‘ç°<i class="fa fa-caret-down" style="font-size: 14px;margin-left: 5px;" aria-hidden="true"></i></a><div class="dropdown-block hidden"><ul class="dropdown-content-menu"><li><a href="javascript:if(confirm('https://segmentfault.com/events  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/events'" tppabs="https://segmentfault.com/events">æ´»åŠ¨</a></li><li><a href="javascript:if(confirm('https://segmentfault.com/groups  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/groups'" tppabs="https://segmentfault.com/groups">æŠ€æœ¯åœˆ<span class="notice notice-menu">hi</span></a></li><li><a href="javascript:if(confirm('https://segmentfault.com/jobs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/jobs'" tppabs="https://segmentfault.com/jobs">æ‰¾å·¥ä½œ</a></li><li><a href="javascript:if(confirm('https://segmentfault.com/users  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/users'" tppabs="https://segmentfault.com/users">æ’è¡Œæ¦œ</a></li><li><a href="javascript:if(confirm('https://segmentfault.com/badges  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/badges'" tppabs="https://segmentfault.com/badges">å¾½ç« </a></li><li><a href="javascript:if(confirm('https://segmentfault.com/notes  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/notes'" tppabs="https://segmentfault.com/notes">ç¬”è®°</a></li><li><a href="javascript:if(confirm('https://docs.segmentfault.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://docs.segmentfault.com/'" tppabs="https://docs.segmentfault.com/" target="_blank">å¼€å‘æ‰‹å†Œ<i style="line-height: 20px;font-size: 12px;color: #F5A623;" class="ml10 fa fa-external-link-square"></i></a></li><li><a href="javascript:if(confirm('https://business.segmentfault.com/ads.html?utm_source=sf-header  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://business.segmentfault.com/ads.html?utm_source=sf-header'" tppabs="https://business.segmentfault.com/ads.html?utm_source=sf-header" target="_blank">å¹¿å‘ŠæŠ•æ”¾<i style="line-height: 20px;font-size: 12px;color: #F5A623;" class="ml10 fa fa-external-link-square"></i></a></li></ul></div></li><li class="menu__item visible-sm-inline-block"><a href="javascript:if(confirm('https://segmentfault.com/search  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/search'" tppabs="https://segmentfault.com/search"><span class="glyphicon glyphicon-search" style="vertical-align: middle;"></span></a></li></ul><form action="https://segmentfault.com/search" class="header-search  hidden-sm hidden-xs pull-right" ><button class="btn btn-link"><span class="sr-only">æœç´¢</span><span class="glyphicon glyphicon-search"></span></button><input id="searchBox" name="q" type="text"  placeholder="æœç´¢é—®é¢˜æˆ–å…³é”®å­—" class="form-control" value="" /></form></div></div><div class="col-sm-4 col-md-3 col-lg-3 text-right"><ul class="opts list-inline hidden-xs"><li class="opts__item"><a href="javascript:if(confirm('https://segmentfault.com/user/login  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/user/login'" tppabs="https://segmentfault.com/user/login" class="SFLogin btn-signin" style="margin-bottom:2px;">ç«‹å³ç™»å½•</a><a href="javascript:if(confirm('https://segmentfault.com/user/login  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/user/login'" tppabs="https://segmentfault.com/user/login" class="SFLogin ml10 btn-signup"
+                                       onClick="_gaq.push(['_trackEvent', 'Button', 'Click', 'Login']);">å…è´¹æ³¨å†Œ</a></li></ul></div></div></nav></div>
+    
+<input id="articleId" value="1190000004357994" class="hidden" />
+<div class="wrap" data-blogid="1200000003830925">
+            <div id="loginBanner"  class="hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-7">
+                <h1 class="title">åœ¨ SegmentFaultï¼Œå­¦ä¹ æŠ€èƒ½ã€è§£å†³é—®é¢˜</h1>
+                <p class="desc">æ¯ä¸ªæœˆï¼Œæˆ‘ä»¬å¸®åŠ© 1000 ä¸‡çš„å¼€å‘è€…è§£å†³å„ç§å„æ ·çš„æŠ€æœ¯é—®é¢˜ã€‚å¹¶åŠ©åŠ›ä»–ä»¬åœ¨æŠ€æœ¯èƒ½åŠ›ã€èŒä¸šç”Ÿæ¶¯ã€å½±å“åŠ›ä¸Šè·å¾—æå‡ã€‚</p>
+            </div>
+            <div class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-1">
+                <form class="register-form clearfix" action="javascript:if(confirm('https://segmentfault.com/api/user/phone/register  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/user/phone/register'" tppabs="https://segmentfault.com/api/user/phone/register">
+
+                    
+                    <a href="javascript:if(confirm('https://segmentfault.com/user/login  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/user/login'" tppabs="https://segmentfault.com/user/login" class="SFLogin btn btn-lg btn-primary mr15">å…è´¹æ³¨å†Œ</a>
+                    <a href="javascript:if(confirm('https://segmentfault.com/user/login  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/user/login'" tppabs="https://segmentfault.com/user/login" class="SFLogin btn btn-lg btn-primary">ç«‹å³ç™»å½•</a>
+                </form>
+            </div>
+        </div>
+    </div>
+        <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </div>
+
+        <div class="post-topheader custom-">
+        <div class="container">
+            <div class="block-for-right-border">
+                <div class="row">
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                        <div class="post-topheader__info" data-username="å´”å°æ‹½"
+                             data-userslug="cuixiaozhuai"
+                             data-useravatar="https://sfault-avatar.b0.upaiyun.com/305/322/3053223291-564c4e7d37faa_big64">
+
+                            <h1 class="h3 post-topheader__info--title" id="articleTitle" data-id="1190000004357994">
+                                <a href="1190000004357994.htm" tppabs="https://segmentfault.com/a/1190000004357994"> phpçˆ¬è™«ï¼šçŸ¥ä¹ç”¨æˆ·æ•°æ®çˆ¬å–å’Œåˆ†æ</a>
+                            </h1>
+
+                            <div class="content__tech blog-type-common blog-type-0-before">
+                                <ul class="taglist--inline inline-block article__title--tag mr10">
+                                                                            <li class="tagPopup mb5">
+                                            <a class="tag" href="javascript:if(confirm('https://segmentfault.com/t/%E7%BD%91%E9%A1%B5%E7%88%AC%E8%99%AB/blogs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/t/%E7%BD%91%E9%A1%B5%E7%88%AC%E8%99%AB/blogs'" tppabs="https://segmentfault.com/t/%E7%BD%91%E9%A1%B5%E7%88%AC%E8%99%AB/blogs" data-toggle="popover"
+                                                                    data-img="" data-placement="top"
+                                                                    data-original-title="ç½‘é¡µçˆ¬è™«"
+                                                                    data-id="1040000000090430">
+                                                                                        ç½‘é¡µçˆ¬è™«
+                                            </a>
+                                        </li>
+                                                                            <li class="tagPopup mb5">
+                                            <a class="tag" href="javascript:if(confirm('https://segmentfault.com/t/shell/blogs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/t/shell/blogs'" tppabs="https://segmentfault.com/t/shell/blogs" data-toggle="popover"
+                                                                    data-img="" data-placement="top"
+                                                                    data-original-title="shell"
+                                                                    data-id="1040000000089669">
+                                                                                        shell
+                                            </a>
+                                        </li>
+                                                                            <li class="tagPopup mb5">
+                                            <a class="tag" href="javascript:if(confirm('https://segmentfault.com/t/css/blogs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/t/css/blogs'" tppabs="https://segmentfault.com/t/css/blogs" data-toggle="popover"
+                                                                    data-img="https://sfault-avatar.b0.upaiyun.com/122/960/1229606535-1040000000089434_huge256" data-placement="top"
+                                                                    data-original-title="css"
+                                                                    data-id="1040000000089434">
+                                                                                        css
+                                            </a>
+                                        </li>
+                                                                            <li class="tagPopup mb5">
+                                            <a class="tag" href="javascript:if(confirm('https://segmentfault.com/t/javascript/blogs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/t/javascript/blogs'" tppabs="https://segmentfault.com/t/javascript/blogs" data-toggle="popover"
+                                                                    data-img="https://sfault-avatar.b0.upaiyun.com/195/823/1958237468-1040000000089436_huge256" data-placement="top"
+                                                                    data-original-title="javascript"
+                                                                    data-id="1040000000089436">
+                                                                                        javascript
+                                            </a>
+                                        </li>
+                                                                            <li class="tagPopup mb5">
+                                            <a class="tag" href="javascript:if(confirm('https://segmentfault.com/t/php/blogs  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/t/php/blogs'" tppabs="https://segmentfault.com/t/php/blogs" data-toggle="popover"
+                                                                    data-img="https://sfault-avatar.b0.upaiyun.com/188/805/188805810-1040000000089387_huge256" data-placement="top"
+                                                                    data-original-title="php"
+                                                                    data-id="1040000000089387">
+                                                                                        php
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                                                                                                <div class="article__author">
+                                    <a href="javascript:if(confirm('https://segmentfault.com/u/cuixiaozhuai  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/cuixiaozhuai'" tppabs="https://segmentfault.com/u/cuixiaozhuai" class="mr5 "><strong>å´”å°æ‹½</strong></a>
+                                    2016å¹´01æœˆ24æ—¥å‘å¸ƒ
+                                                                                                        </div>
+                            </div>
+
+                                                        <form class="form form__tech hidden" data-action="#">
+                                <span class="pull-right">
+                                    <button class="btn btn-default save-tags-btn" type="button">ä¿å­˜</button>
+                                </span>
+                                <div class="form-group" style="margin-right: 65px">
+                                    <label for="tags" class="sr-only">æ ‡ç­¾ï¼šè‡³å°‘1ä¸ªï¼Œæœ€å¤š5ä¸ª</label>
+                                    <input
+                                            class="tagsInput form-control"
+                                            data-init="[{&quot;name&quot;:&quot;\u7f51\u9875\u722c\u866b&quot;,&quot;url&quot;:&quot;\/t\/%E7%BD%91%E9%A1%B5%E7%88%AC%E8%99%AB&quot;,&quot;id&quot;:&quot;1040000000090430&quot;,&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;contentCount&quot;:983,&quot;iconUrl&quot;:&quot;&quot;},{&quot;name&quot;:&quot;shell&quot;,&quot;url&quot;:&quot;\/t\/shell&quot;,&quot;id&quot;:&quot;1040000000089669&quot;,&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;contentCount&quot;:1400,&quot;iconUrl&quot;:&quot;&quot;},{&quot;name&quot;:&quot;css&quot;,&quot;url&quot;:&quot;\/t\/css&quot;,&quot;id&quot;:&quot;1040000000089434&quot;,&quot;thumbnailUrl&quot;:&quot;https:\/\/sfault-avatar.b0.upaiyun.com\/122\/960\/1229606535-1040000000089434_huge256&quot;,&quot;contentCount&quot;:18112,&quot;iconUrl&quot;:&quot;&quot;},{&quot;name&quot;:&quot;javascript&quot;,&quot;url&quot;:&quot;\/t\/javascript&quot;,&quot;id&quot;:&quot;1040000000089436&quot;,&quot;thumbnailUrl&quot;:&quot;https:\/\/sfault-avatar.b0.upaiyun.com\/195\/823\/1958237468-1040000000089436_huge256&quot;,&quot;contentCount&quot;:76024,&quot;iconUrl&quot;:&quot;&quot;},{&quot;name&quot;:&quot;php&quot;,&quot;url&quot;:&quot;\/t\/php&quot;,&quot;id&quot;:&quot;1040000000089387&quot;,&quot;thumbnailUrl&quot;:&quot;https:\/\/sfault-avatar.b0.upaiyun.com\/188\/805\/188805810-1040000000089387_huge256&quot;,&quot;contentCount&quot;:31517,&quot;iconUrl&quot;:&quot;&quot;}]"
+                                            name="tags"
+                                            type="text"
+                                            placeholder="æ ‡ç­¾ï¼Œå¦‚ï¼šphp å¯ä½¿ç”¨é€—å·,åˆ†å·;åˆ†éš”"
+                                            data-role="tagsinput"/>
+                                    <div role="tabpanel" class="techTags panel panel-default techTags-panel" data-tech='{"\u5f00\u53d1\u8bed\u8a00":[{"id":"1040000000089436","name":"javascript","iconUrl":""},{"id":"1040000000089387","name":"php","iconUrl":""},{"id":"1040000000089434","name":"css","iconUrl":""},{"id":"1040000000089571","name":"html","iconUrl":""},{"id":"1040000000089449","name":"java","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/868\/271\/868271510-54cb382abb7a1_small"},{"id":"1040000000089409","name":"html5","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/102\/500\/1025005915-54cb538538eea_small"},{"id":"1040000000089534","name":"python","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/252\/177\/2521771040-54cb53b372821_small"},{"id":"1040000000089918","name":"node.js","iconUrl":""},{"id":"1040000000089741","name":"c++","iconUrl":""},{"id":"1040000000089457","name":"c","iconUrl":""},{"id":"1040000000090209","name":"objective-c","iconUrl":""},{"id":"1040000000090203","name":"golang","iconUrl":""},{"id":"1040000000089669","name":"shell","iconUrl":""},{"id":"1040000000531223","name":"swift","iconUrl":""},{"id":"1040000000089581","name":"c#","iconUrl":""},{"id":"1040000000089699","name":"ruby","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/336\/760\/3367608758-54cb53ca5a132_small"},{"id":"1040000000089686","name":"bash","iconUrl":""},{"id":"1040000000365394","name":"typescript","iconUrl":""},{"id":"1040000000091262","name":"sass","iconUrl":""},{"id":"1040000000090433","name":"asp.net","iconUrl":""},{"id":"1040000000090600","name":"less","iconUrl":""},{"id":"1040000000090208","name":"lua","iconUrl":""},{"id":"1040000000090228","name":"scala","iconUrl":""},{"id":"1040000000161068","name":"coffeescript","iconUrl":""},{"id":"1040000000090194","name":"actionscript","iconUrl":""},{"id":"1040000000090201","name":"erlang","iconUrl":""},{"id":"1040000000089698","name":"perl","iconUrl":""},{"id":"1040000000311191","name":"rust","iconUrl":""}],"\u5e73\u53f0\u6846\u67b6":[{"id":"1040000000196640","name":"laravel","iconUrl":""},{"id":"1040000000090103","name":"spring","iconUrl":""},{"id":"1040000000089564","name":"django","iconUrl":""},{"id":"1040000000125263","name":"flask","iconUrl":""},{"id":"1040000000166256","name":"express","iconUrl":""},{"id":"1040000000089646","name":"ruby-on-rails","iconUrl":""},{"id":"1040000000090398","name":"yii","iconUrl":""},{"id":"1040000000116331","name":"tornado","iconUrl":""},{"id":"1040000000622042","name":"koa","iconUrl":""},{"id":"1040000000089638","name":"struts","iconUrl":""}],"\u670d\u52a1\u5668":[{"id":"1040000000089392","name":"linux","iconUrl":""},{"id":"1040000000090145","name":"nginx","iconUrl":""},{"id":"1040000000089761","name":"apache","iconUrl":""},{"id":"1040000000366352","name":"docker","iconUrl":""},{"id":"1040000000090245","name":"ubuntu","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/335\/109\/3351090335-569f0f26a2a86_small"},{"id":"1040000000090249","name":"centos","iconUrl":""},{"id":"1040000000090117","name":"tomcat","iconUrl":""},{"id":"1040000000090401","name":"\u7f13\u5b58","iconUrl":""},{"id":"1040000000090107","name":"\u8d1f\u8f7d\u5747\u8861","iconUrl":""},{"id":"1040000000090646","name":"unix","iconUrl":""},{"id":"1040000000089648","name":"hadoop","iconUrl":""},{"id":"1040000000090609","name":"windows-server","iconUrl":""}],"\u6570\u636e\u5e93\u548c\u7f13\u5b58":[{"id":"1040000000089439","name":"mysql","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/949\/844\/9498447-54cb56e325a72_small"},{"id":"1040000000090049","name":"sql","iconUrl":""},{"id":"1040000000089431","name":"redis","iconUrl":""},{"id":"1040000000089488","name":"mongodb","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/183\/816\/1838168166-54cb5552ef5de_small"},{"id":"1040000000090701","name":"oracle","iconUrl":""},{"id":"1040000000089432","name":"nosql","iconUrl":""},{"id":"1040000000089873","name":"memcached","iconUrl":""},{"id":"1040000000090424","name":"sqlserver","iconUrl":""},{"id":"1040000000090354","name":"sqlite","iconUrl":""},{"id":"1040000000090861","name":"postgresql","iconUrl":""}],"\u5f00\u53d1\u5de5\u5177":[{"id":"1040000000089459","name":"git","iconUrl":""},{"id":"1040000000091226","name":"github","iconUrl":""},{"id":"1040000000089467","name":"vim","iconUrl":""},{"id":"1040000000089579","name":"xcode","iconUrl":""},{"id":"1040000000126097","name":"sublime-text","iconUrl":""},{"id":"1040000002720957","name":"visual-studio-code","iconUrl":""},{"id":"1040000000089509","name":"eclipse","iconUrl":""},{"id":"1040000000090560","name":"intellij-idea","iconUrl":""},{"id":"1040000000090186","name":"maven","iconUrl":""},{"id":"1040000000089447","name":"svn","iconUrl":""},{"id":"1040000000090473","name":"ide","iconUrl":""},{"id":"1040000000090524","name":"atom","iconUrl":""},{"id":"1040000000090231","name":"visual-studio","iconUrl":""},{"id":"1040000000090216","name":"emacs","iconUrl":""},{"id":"1040000000183694","name":"hg","iconUrl":""},{"id":"1040000000089663","name":"textmate","iconUrl":""}],"\u7cfb\u7edf\u8bbe\u5907":[{"id":"1040000000089658","name":"android","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/287\/281\/287281599-5a263edae47e9_small"},{"id":"1040000000089442","name":"ios","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/300\/191\/3001919899-5488009eb028c_small"},{"id":"1040000000089407","name":"chrome","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/281\/209\/2812096638-54cb55083b2cc_small"},{"id":"1040000000089709","name":"windows","iconUrl":""},{"id":"1040000000089498","name":"iphone","iconUrl":""},{"id":"1040000000090217","name":"firefox","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/334\/705\/334705769-54cb552688a94_small"},{"id":"1040000000125504","name":"internet-explorer","iconUrl":""},{"id":"1040000000089499","name":"safari","iconUrl":""},{"id":"1040000000090638","name":"ipad","iconUrl":""},{"id":"1040000000090218","name":"opera","iconUrl":""},{"id":"1040000002871462","name":"apple-watch","iconUrl":""}],"\u5176\u5b83":[{"id":"1040000000089409","name":"html5","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/102\/500\/1025005915-54cb538538eea_small"},{"id":"1040000002893277","name":"react.js","iconUrl":""},{"id":"1040000000090137","name":"\u641c\u7d22\u5f15\u64ce","iconUrl":""},{"id":"1040000000123810","name":"virtualenv","iconUrl":""},{"id":"1040000000090316","name":"lucene","iconUrl":""}]}'>
+    <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a
+                        href="#å¼€å‘è¯­è¨€"
+                        aria-controls="type"
+                        role="tab"
+                        data-toggle="tab">å¼€å‘è¯­è¨€</a>
+            </li>
+                    <li role="presentation" class=""><a
+                        href="#å¹³å°æ¡†æ¶"
+                        aria-controls="type"
+                        role="tab"
+                        data-toggle="tab">å¹³å°æ¡†æ¶</a>
+            </li>
+                    <li role="presentation" class=""><a
+                        href="#æœåŠ¡å™¨"
+                        aria-controls="type"
+                        role="tab"
+                        data-toggle="tab">æœåŠ¡å™¨</a>
+            </li>
+                    <li role="presentation" class=""><a
+                        href="#æ•°æ®åº“å’Œç¼“å­˜"
+                        aria-controls="type"
+                        role="tab"
+                        data-toggle="tab">æ•°æ®åº“å’Œç¼“å­˜</a>
+            </li>
+                    <li role="presentation" class=""><a
+                        href="#å¼€å‘å·¥å…·"
+                        aria-controls="type"
+                        role="tab"
+                        data-toggle="tab">å¼€å‘å·¥å…·</a>
+            </li>
+                    <li role="presentation" class=""><a
+                        href="#ç³»ç»Ÿè®¾å¤‡"
+                        aria-controls="type"
+                        role="tab"
+                        data-toggle="tab">ç³»ç»Ÿè®¾å¤‡</a>
+            </li>
+                    <li role="presentation" class=""><a
+                        href="#å…¶å®ƒ"
+                        aria-controls="type"
+                        role="tab"
+                        data-toggle="tab">å…¶å®ƒ</a>
+            </li>
+            </ul>
+    <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active"
+                 id="å¼€å‘è¯­è¨€">
+                <ul class="taglist--inline">
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089436","name":"javascript","iconUrl":""}' href="javascript: void(0);">
+                                                                javascript
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089387","name":"php","iconUrl":""}' href="javascript: void(0);">
+                                                                php
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089434","name":"css","iconUrl":""}' href="javascript: void(0);">
+                                                                css
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089571","name":"html","iconUrl":""}' href="javascript: void(0);">
+                                                                html
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089449","name":"java","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/868\/271\/868271510-54cb382abb7a1_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/868/271/868271510-54cb382abb7a1_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/868/271/868271510-54cb382abb7a1_small">
+                                                                java
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089409","name":"html5","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/102\/500\/1025005915-54cb538538eea_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/102/500/1025005915-54cb538538eea_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/102/500/1025005915-54cb538538eea_small">
+                                                                html5
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089534","name":"python","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/252\/177\/2521771040-54cb53b372821_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/252/177/2521771040-54cb53b372821_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/252/177/2521771040-54cb53b372821_small">
+                                                                python
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089918","name":"node.js","iconUrl":""}' href="javascript: void(0);">
+                                                                node.js
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089741","name":"c++","iconUrl":""}' href="javascript: void(0);">
+                                                                c++
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089457","name":"c","iconUrl":""}' href="javascript: void(0);">
+                                                                c
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090209","name":"objective-c","iconUrl":""}' href="javascript: void(0);">
+                                                                objective-c
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090203","name":"golang","iconUrl":""}' href="javascript: void(0);">
+                                                                golang
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089669","name":"shell","iconUrl":""}' href="javascript: void(0);">
+                                                                shell
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000531223","name":"swift","iconUrl":""}' href="javascript: void(0);">
+                                                                swift
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089581","name":"c#","iconUrl":""}' href="javascript: void(0);">
+                                                                c#
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089699","name":"ruby","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/336\/760\/3367608758-54cb53ca5a132_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/336/760/3367608758-54cb53ca5a132_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/336/760/3367608758-54cb53ca5a132_small">
+                                                                ruby
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089686","name":"bash","iconUrl":""}' href="javascript: void(0);">
+                                                                bash
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000365394","name":"typescript","iconUrl":""}' href="javascript: void(0);">
+                                                                typescript
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000091262","name":"sass","iconUrl":""}' href="javascript: void(0);">
+                                                                sass
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090433","name":"asp.net","iconUrl":""}' href="javascript: void(0);">
+                                                                asp.net
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090600","name":"less","iconUrl":""}' href="javascript: void(0);">
+                                                                less
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090208","name":"lua","iconUrl":""}' href="javascript: void(0);">
+                                                                lua
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090228","name":"scala","iconUrl":""}' href="javascript: void(0);">
+                                                                scala
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000161068","name":"coffeescript","iconUrl":""}' href="javascript: void(0);">
+                                                                coffeescript
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090194","name":"actionscript","iconUrl":""}' href="javascript: void(0);">
+                                                                actionscript
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090201","name":"erlang","iconUrl":""}' href="javascript: void(0);">
+                                                                erlang
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089698","name":"perl","iconUrl":""}' href="javascript: void(0);">
+                                                                perl
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000311191","name":"rust","iconUrl":""}' href="javascript: void(0);">
+                                                                rust
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+                    <div role="tabpanel" class="tab-pane "
+                 id="å¹³å°æ¡†æ¶">
+                <ul class="taglist--inline">
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000196640","name":"laravel","iconUrl":""}' href="javascript: void(0);">
+                                                                laravel
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090103","name":"spring","iconUrl":""}' href="javascript: void(0);">
+                                                                spring
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089564","name":"django","iconUrl":""}' href="javascript: void(0);">
+                                                                django
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000125263","name":"flask","iconUrl":""}' href="javascript: void(0);">
+                                                                flask
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000166256","name":"express","iconUrl":""}' href="javascript: void(0);">
+                                                                express
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089646","name":"ruby-on-rails","iconUrl":""}' href="javascript: void(0);">
+                                                                ruby-on-rails
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090398","name":"yii","iconUrl":""}' href="javascript: void(0);">
+                                                                yii
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000116331","name":"tornado","iconUrl":""}' href="javascript: void(0);">
+                                                                tornado
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000622042","name":"koa","iconUrl":""}' href="javascript: void(0);">
+                                                                koa
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089638","name":"struts","iconUrl":""}' href="javascript: void(0);">
+                                                                struts
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+                    <div role="tabpanel" class="tab-pane "
+                 id="æœåŠ¡å™¨">
+                <ul class="taglist--inline">
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089392","name":"linux","iconUrl":""}' href="javascript: void(0);">
+                                                                linux
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090145","name":"nginx","iconUrl":""}' href="javascript: void(0);">
+                                                                nginx
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089761","name":"apache","iconUrl":""}' href="javascript: void(0);">
+                                                                apache
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000366352","name":"docker","iconUrl":""}' href="javascript: void(0);">
+                                                                docker
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090245","name":"ubuntu","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/335\/109\/3351090335-569f0f26a2a86_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/335/109/3351090335-569f0f26a2a86_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/335/109/3351090335-569f0f26a2a86_small">
+                                                                ubuntu
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090249","name":"centos","iconUrl":""}' href="javascript: void(0);">
+                                                                centos
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090117","name":"tomcat","iconUrl":""}' href="javascript: void(0);">
+                                                                tomcat
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090401","name":"\u7f13\u5b58","iconUrl":""}' href="javascript: void(0);">
+                                                                ç¼“å­˜
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090107","name":"\u8d1f\u8f7d\u5747\u8861","iconUrl":""}' href="javascript: void(0);">
+                                                                è´Ÿè½½å‡è¡¡
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090646","name":"unix","iconUrl":""}' href="javascript: void(0);">
+                                                                unix
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089648","name":"hadoop","iconUrl":""}' href="javascript: void(0);">
+                                                                hadoop
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090609","name":"windows-server","iconUrl":""}' href="javascript: void(0);">
+                                                                windows-server
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+                    <div role="tabpanel" class="tab-pane "
+                 id="æ•°æ®åº“å’Œç¼“å­˜">
+                <ul class="taglist--inline">
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089439","name":"mysql","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/949\/844\/9498447-54cb56e325a72_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/949/844/9498447-54cb56e325a72_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/949/844/9498447-54cb56e325a72_small">
+                                                                mysql
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090049","name":"sql","iconUrl":""}' href="javascript: void(0);">
+                                                                sql
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089431","name":"redis","iconUrl":""}' href="javascript: void(0);">
+                                                                redis
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089488","name":"mongodb","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/183\/816\/1838168166-54cb5552ef5de_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/183/816/1838168166-54cb5552ef5de_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/183/816/1838168166-54cb5552ef5de_small">
+                                                                mongodb
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090701","name":"oracle","iconUrl":""}' href="javascript: void(0);">
+                                                                oracle
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089432","name":"nosql","iconUrl":""}' href="javascript: void(0);">
+                                                                nosql
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089873","name":"memcached","iconUrl":""}' href="javascript: void(0);">
+                                                                memcached
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090424","name":"sqlserver","iconUrl":""}' href="javascript: void(0);">
+                                                                sqlserver
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090354","name":"sqlite","iconUrl":""}' href="javascript: void(0);">
+                                                                sqlite
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090861","name":"postgresql","iconUrl":""}' href="javascript: void(0);">
+                                                                postgresql
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+                    <div role="tabpanel" class="tab-pane "
+                 id="å¼€å‘å·¥å…·">
+                <ul class="taglist--inline">
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089459","name":"git","iconUrl":""}' href="javascript: void(0);">
+                                                                git
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000091226","name":"github","iconUrl":""}' href="javascript: void(0);">
+                                                                github
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089467","name":"vim","iconUrl":""}' href="javascript: void(0);">
+                                                                vim
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089579","name":"xcode","iconUrl":""}' href="javascript: void(0);">
+                                                                xcode
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000126097","name":"sublime-text","iconUrl":""}' href="javascript: void(0);">
+                                                                sublime-text
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000002720957","name":"visual-studio-code","iconUrl":""}' href="javascript: void(0);">
+                                                                visual-studio-code
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089509","name":"eclipse","iconUrl":""}' href="javascript: void(0);">
+                                                                eclipse
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090560","name":"intellij-idea","iconUrl":""}' href="javascript: void(0);">
+                                                                intellij-idea
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090186","name":"maven","iconUrl":""}' href="javascript: void(0);">
+                                                                maven
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089447","name":"svn","iconUrl":""}' href="javascript: void(0);">
+                                                                svn
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090473","name":"ide","iconUrl":""}' href="javascript: void(0);">
+                                                                ide
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090524","name":"atom","iconUrl":""}' href="javascript: void(0);">
+                                                                atom
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090231","name":"visual-studio","iconUrl":""}' href="javascript: void(0);">
+                                                                visual-studio
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090216","name":"emacs","iconUrl":""}' href="javascript: void(0);">
+                                                                emacs
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000183694","name":"hg","iconUrl":""}' href="javascript: void(0);">
+                                                                hg
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089663","name":"textmate","iconUrl":""}' href="javascript: void(0);">
+                                                                textmate
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+                    <div role="tabpanel" class="tab-pane "
+                 id="ç³»ç»Ÿè®¾å¤‡">
+                <ul class="taglist--inline">
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089658","name":"android","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/287\/281\/287281599-5a263edae47e9_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/287/281/287281599-5a263edae47e9_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/287/281/287281599-5a263edae47e9_small">
+                                                                android
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089442","name":"ios","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/300\/191\/3001919899-5488009eb028c_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/300/191/3001919899-5488009eb028c_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/300/191/3001919899-5488009eb028c_small">
+                                                                ios
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089407","name":"chrome","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/281\/209\/2812096638-54cb55083b2cc_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/281/209/2812096638-54cb55083b2cc_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/281/209/2812096638-54cb55083b2cc_small">
+                                                                chrome
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089709","name":"windows","iconUrl":""}' href="javascript: void(0);">
+                                                                windows
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089498","name":"iphone","iconUrl":""}' href="javascript: void(0);">
+                                                                iphone
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090217","name":"firefox","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/334\/705\/334705769-54cb552688a94_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/334/705/334705769-54cb552688a94_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/334/705/334705769-54cb552688a94_small">
+                                                                firefox
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000125504","name":"internet-explorer","iconUrl":""}' href="javascript: void(0);">
+                                                                internet-explorer
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089499","name":"safari","iconUrl":""}' href="javascript: void(0);">
+                                                                safari
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090638","name":"ipad","iconUrl":""}' href="javascript: void(0);">
+                                                                ipad
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090218","name":"opera","iconUrl":""}' href="javascript: void(0);">
+                                                                opera
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000002871462","name":"apple-watch","iconUrl":""}' href="javascript: void(0);">
+                                                                apple-watch
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+                    <div role="tabpanel" class="tab-pane "
+                 id="å…¶å®ƒ">
+                <ul class="taglist--inline">
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000089409","name":"html5","iconUrl":"https:\/\/sfault-avatar.b0.upaiyun.com\/102\/500\/1025005915-54cb538538eea_small"}' href="javascript: void(0);">
+                                                                    <img src="../../sfault-avatar.b0.upaiyun.com/102/500/1025005915-54cb538538eea_small.png" tppabs="https://sfault-avatar.b0.upaiyun.com/102/500/1025005915-54cb538538eea_small">
+                                                                html5
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000002893277","name":"react.js","iconUrl":""}' href="javascript: void(0);">
+                                                                react.js
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090137","name":"\u641c\u7d22\u5f15\u64ce","iconUrl":""}' href="javascript: void(0);">
+                                                                æœç´¢å¼•æ“
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000123810","name":"virtualenv","iconUrl":""}' href="javascript: void(0);">
+                                                                virtualenv
+                            </a>
+                        </li>
+                                            <li class="mb5">
+                            <a class="tag" data-tag='{"id":"1040000000090316","name":"lucene","iconUrl":""}' href="javascript: void(0);">
+                                                                lucene
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            </div>
+</div>
+
+                                </div>
+                               
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 hidden-xs">
+                        <ul class="post-topheader__side list-unstyled">
+                            <li>
+                                <button type="button" class="btn btn-success btn-sm "
+                                            data-id="1190000004357994" id="sideLike"><span id="sideLikeText">èµ</span>&nbsp;&nbsp;<span class="seprator">|</span>&nbsp;&nbsp;
+                                            <span id="sideLikeNum">7</span></button><button type="button" id="sideBookmark" class="btn btn-default btn-sm "
+                                            data-id="1190000004357994" data-id="1190000004357994" data-type="article"><span id="sideBookmarkText">æ”¶è—</span>&nbsp;&nbsp;<span class="seprator">|</span>&nbsp;&nbsp;<span id="sideBookmarkNum">57</span></button>                            </li>
+                            <li>
+                                <strong class="no-stress">5.6k</strong> æ¬¡æµè§ˆ
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end .post-topheader -->
+
+    <div class="container mt30">
+        <div class="row">
+            <div class="col-xs-12 col-md-9 main ">
+
+                
+                <div class="article fmt article__content" data-id="1190000004357994" data-license="sa">
+                    <html><body>
+<blockquote><p>èƒŒæ™¯è¯´æ˜ï¼šå°æ‹½åˆ©ç”¨phpçš„curlå†™çš„çˆ¬è™«ï¼Œå®éªŒæ€§çš„çˆ¬å–äº†çŸ¥ä¹5wç”¨æˆ·çš„åŸºæœ¬ä¿¡æ¯ï¼›åŒæ—¶ï¼Œé’ˆå¯¹çˆ¬å–çš„æ•°æ®ï¼Œè¿›è¡Œäº†ç®€å•çš„åˆ†æå‘ˆç°ã€‚<a href="javascript:if(confirm('http://cuihuan.net:1015/demo_file/zhihu_spider/demo.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://cuihuan.net:1015/demo_file/zhihu_spider/demo.html'" tppabs="http://cuihuan.net:1015/demo_file/zhihu_spider/demo.html">demo åœ°å€</a></p></blockquote>
+<p>phpçš„spiderä»£ç å’Œç”¨æˆ·dashboardçš„å±•ç°ä»£ç ï¼Œæ•´ç†åä¸Šä¼ githubï¼Œåœ¨ä¸ªäººåšå®¢å’Œå…¬ä¼—å·æ›´æ–°ä»£ç åº“ï¼Œç¨‹åºä»…ä¾›å¨±ä¹å’Œå­¦ä¹ äº¤æµï¼›å¦‚æœæœ‰ä¾µçŠ¯çŸ¥ä¹ç›¸å…³æƒç›Šï¼Œè¯·å°½å¿«è”ç³»æœ¬äººåˆ é™¤ã€‚</p>
+<h2>æ— å›¾æ— çœŸç›¸</h2>
+<p>ç§»åŠ¨ç«¯åˆ†ææ•°æ®æˆªå›¾</p>
+<p><a href="javascript:if(confirm('http://cuihuan.net/wp-content/uploads/2016/01/wise_web_spider.png  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://cuihuan.net/wp-content/uploads/2016/01/wise_web_spider.png'" tppabs="http://cuihuan.net/wp-content/uploads/2016/01/wise_web_spider.png"><span class="img-wrap"><img data-src="../../sfault-image.b0.upaiyun.com/166/224/1662247377-56fde707bdfe3_articlex.png" tppabs="https://segmentfault.com/image?src=http://cuihuan.net/wp-content/uploads/2016/01/wise_web_spider.png&objectId=1190000004357994&token=a3b0a417b2f358bcaf6beddbd949783a"></span></a></p>
+<p>pcç«¯åˆ†ææ•°æ®æˆªå›¾</p>
+<p><a href="javascript:if(confirm('http://cuihuan.net/wp-content/uploads/2016/01/web_spider.png  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://cuihuan.net/wp-content/uploads/2016/01/web_spider.png'" tppabs="http://cuihuan.net/wp-content/uploads/2016/01/web_spider.png"><span class="img-wrap"><img data-src="../../sfault-image.b0.upaiyun.com/210/665/2106654622-56fde70a93193_articlex.png" tppabs="https://segmentfault.com/image?src=http://cuihuan.net/wp-content/uploads/2016/01/web_spider-629x1024.png&objectId=1190000004357994&token=238825a7f77d9be2823164ed9a8f70a0"></span></a></p>
+<p>æ•´ä¸ªçˆ¬å–ï¼Œåˆ†æï¼Œå±•ç°è¿‡ç¨‹å¤§æ¦‚åˆ†å¦‚ä¸‹å‡ æ­¥ï¼Œå°æ‹½å°†åˆ†åˆ«ä»‹ç»</p>
+<ul>
+<li><p>curlçˆ¬å–çŸ¥ä¹ç½‘é¡µæ•°æ®</p></li>
+<li><p>æ­£åˆ™åˆ†æçŸ¥ä¹ç½‘é¡µæ•°æ®</p></li>
+<li><p>æ•°æ®æ•°æ®å…¥åº“å’Œç¨‹åºéƒ¨ç½²</p></li>
+<li><p>æ•°æ®åˆ†æå’Œå‘ˆç°</p></li>
+</ul>
+<h2>curlçˆ¬å–ç½‘é¡µæ•°æ®</h2>
+<p>PHPçš„curlæ‰©å±•æ˜¯PHPæ”¯æŒçš„ï¼Œå…è®¸ä½ ä¸å„ç§æœåŠ¡å™¨ä½¿ç”¨å„ç§ç±»å‹çš„åè®®è¿›è¡Œè¿æ¥å’Œé€šä¿¡çš„åº“ã€‚æ˜¯ä¸€ä¸ªéå¸¸ä¾¿æ·çš„æŠ“å–ç½‘é¡µçš„å·¥å…·ï¼ŒåŒæ—¶ï¼Œæ”¯æŒå¤šçº¿ç¨‹æ‰©å±•ã€‚</p>
+<p>æœ¬ç¨‹åºæŠ“å–çš„æ˜¯çŸ¥ä¹å¯¹å¤–æä¾›ç”¨æˆ·è®¿é—®çš„ä¸ªäººä¿¡æ¯é¡µé¢<a href="javascript:if(confirm('https://www.zhihu.com/people/xxx,  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.zhihu.com/people/xxx,'" tppabs="https://www.zhihu.com/people/xxx,">https://www.zhihu.com/people/xxx,</a>æŠ“å–è¿‡ç¨‹éœ€è¦æºå¸¦ç”¨æˆ·cookieæ‰èƒ½è·å–é¡µé¢ã€‚ç›´æ¥ä¸Šç </p>
+<ul>
+<li>
+<p>è·å–é¡µé¢cookie</p>
+<pre><code>// ç™»å½•çŸ¥ä¹ï¼Œæ‰“å¼€ä¸ªäººä¸­å¿ƒï¼Œæ‰“å¼€æ§åˆ¶å°ï¼Œè·å–cookie
+document.cookie
+"_za=67254197-3wwb8d-43f6-94f0-fb0e2d521c31; _ga=GA1.2.2142818188.1433767929; q_c1=78ee1604225d47d08cddd8142a08288b23|1452172601000|1452172601000; _xsrf=15f0639cbe6fb607560c075269064393; cap_id="N2QwMTExNGQ0YTY2NGVddlMGIyNmQ4NjdjOTU0YTM5MmQ=|1453444256|49fdc6b43dc51f702b7d6575451e228f56cdaf5d"; __utmt=1; unlock_ticket="QUJDTWpmM0lsZdd2dYQUFBQVlRSlZUVTNVb1ZaNDVoQXJlblVmWGJ0WGwyaHlDdVdscXdZU1VRPT0=|1453444421|c47a2afde1ff334d416bafb1cc267b41014c9d5f"; __utma=51854390.21428dd18188.1433767929.1453187421.1453444257.3; __utmb=51854390.14.8.1453444425011; __utmc=51854390; __utmz=51854390.1452846679.1.dd1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmv=51854390.100-1|2=registration_date=20150823=1^dd3=entry_date=20150823=1"</code></pre>
+</li>
+<li>
+<p>æŠ“å–ä¸ªäººä¸­å¿ƒé¡µé¢<br> é€šè¿‡curlï¼Œæºå¸¦cookieï¼Œå…ˆæŠ“å–æœ¬äººä¸­å¿ƒé¡µé¢</p>
+<pre><code>/**
+ * é€šè¿‡ç”¨æˆ·åæŠ“å–ä¸ªäººä¸­å¿ƒé¡µé¢å¹¶å­˜å‚¨
+ * 
+ * @param $username str :ç”¨æˆ·å flag
+ * @return boolean      :æˆåŠŸä¸å¦æ ‡å¿—
+ */
+public function spiderUser($username)
+{
+    $cookie = "xxxx" ;
+    $url_info = 'http://www.zhihu.com/people/' . $username; //æ­¤å¤„cui-xiao-zhuaiä»£è¡¨ç”¨æˆ·ID,å¯ä»¥ç›´æ¥çœ‹urlè·å–æœ¬äººid
+    $ch = curl_init($url_info); //åˆå§‹åŒ–ä¼šè¯
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);  //è®¾ç½®è¯·æ±‚COOKIE
+    curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);  //å°†curl_exec()è·å–çš„ä¿¡æ¯ä»¥æ–‡ä»¶æµçš„å½¢å¼è¿”å›ï¼Œè€Œä¸æ˜¯ç›´æ¥è¾“å‡ºã€‚
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    $result = curl_exec($ch);
+
+     file_put_contents('/home/work/zxdata_ch/php/zhihu_spider/file/'.$username.'.html',$result);
+     return true;
+ }</code></pre>
+</li>
+</ul>
+<h2>æ­£åˆ™åˆ†æç½‘é¡µæ•°æ®</h2>
+<h3>åˆ†ææ–°é“¾æ¥ï¼Œè¿›ä¸€æ­¥çˆ¬å–</h3>
+<p>å¯¹äºæŠ“å–è¿‡æ¥çš„ç½‘é¡µè¿›è¡Œå­˜å‚¨ï¼Œ<code>è¦æƒ³è¿›è¡Œè¿›ä¸€æ­¥çš„çˆ¬å–ï¼Œé¡µé¢å¿…é¡»åŒ…å«æœ‰å¯ç”¨äºè¿›ä¸€æ­¥çˆ¬å–ç”¨æˆ·çš„é“¾æ¥</code>ã€‚é€šè¿‡å¯¹çŸ¥ä¹é¡µé¢åˆ†æå‘ç°ï¼šåœ¨ä¸ªäººä¸­å¿ƒé¡µé¢ä¸­æœ‰å…³æ³¨äººå’Œéƒ¨åˆ†ç‚¹èµäººå’Œè¢«å…³æ³¨äººã€‚<br>å¦‚ä¸‹æ‰€ç¤º</p>
+<pre><code>// æŠ“å–çš„htmlé¡µé¢ä¸­å‘ç°äº†æ–°çš„ç”¨æˆ·ï¼Œå¯ç”¨äºçˆ¬è™«
+&lt;a class="zm-item-link-avatar avatar-link" href="/people/new-user" data-tip="p$t$new-user"&gt;
+</code></pre>
+<p>okï¼Œè¿™æ ·å­å°±å¯ä»¥é€šè¿‡è‡ªå·±-ã€‹å…³æ³¨äºº-ã€‹å…³æ³¨äººçš„å…³æ³¨äºº-ã€‹ã€‚ã€‚ã€‚è¿›è¡Œä¸æ–­çˆ¬å–ã€‚æ¥ä¸‹æ¥å°±æ˜¯é€šè¿‡æ­£åˆ™åŒ¹é…æå–è¯¥ä¿¡æ¯</p>
+<pre><code>// åŒ¹é…åˆ°æŠ“å–é¡µé¢çš„æ‰€æœ‰ç”¨æˆ·
+preg_match_all('/\/people\/([\w-]+)\"/i', $str, $match_arr);
+
+// å»é‡åˆå¹¶å…¥æ–°çš„ç”¨æˆ·æ•°ç»„,ç”¨æˆ·è¿›ä¸€æ­¥æŠ“å–
+self::$newUserArr = array_unique(array_merge($match_arr[1], self::$newUserArr));</code></pre>
+<p>åˆ°æ­¤ï¼Œæ•´ä¸ªçˆ¬è™«è¿‡ç¨‹å°±å¯ä»¥é¡ºåˆ©è¿›è¡Œäº†ã€‚<br>å¦‚æœéœ€è¦å¤§é‡çš„æŠ“å–æ•°æ®ï¼Œå¯ä»¥ç ”ç©¶ä¸‹<code>curl_multi</code>å’Œ<code>pcntl</code>è¿›è¡Œå¤šçº¿ç¨‹çš„å¿«é€ŸæŠ“å–ï¼Œæ­¤å¤„ä¸åšèµ˜è¿°ã€‚</p>
+<h3>åˆ†æç”¨æˆ·æ•°æ®ï¼Œæä¾›åˆ†æ</h3>
+<p>é€šè¿‡æ­£åˆ™å¯ä»¥è¿›ä¸€æ­¥åŒ¹é…å‡ºæ›´å¤šçš„è¯¥ç”¨æˆ·æ•°æ®ï¼Œç›´æ¥ä¸Šç ã€‚</p>
+<pre><code>
+// è·å–ç”¨æˆ·å¤´åƒ
+preg_match('/&lt;img.+src=\"?([^\s]+\.(jpg|gif|bmp|bnp|png))\"?.+&gt;/i', $str, $match_img);
+$img_url = $match_img[1];
+
+// åŒ¹é…ç”¨æˆ·åï¼š
+// &lt;span class="name"&gt;å´”å°æ‹½&lt;/span&gt;
+preg_match('/&lt;span.+class=\"?name\"?&gt;([\x{4e00}-\x{9fa5}]+).+span&gt;/u', $str, $match_name);
+$user_name = $match_name[1];
+
+// åŒ¹é…ç”¨æˆ·ç®€ä»‹
+// class bio span ä¸­æ–‡
+preg_match('/&lt;span.+class=\"?bio\"?.+\&gt;([\x{4e00}-\x{9fa5}]+).+span&gt;/u', $str, $match_title);
+$user_title = $match_title[1];
+
+// åŒ¹é…æ€§åˆ«
+//&lt;input type="radio" name="gender" value="1" checked="checked" class="male"/&gt; ç”·&amp;nbsp;&amp;nbsp;
+// gender value1 ;ç»“æŸ ä¸­æ–‡
+preg_match('/&lt;input.+name=\"?gender\"?.+value=\"?1\"?.+([\x{4e00}-\x{9fa5}]+).+\;/u', $str, $match_sex);
+$user_sex = $match_sex[1];
+
+// åŒ¹é…åœ°åŒº
+//&lt;span class="location item" title="åŒ—äº¬"&gt;
+preg_match('/&lt;span.+class=\"?location.+\"?.+\"([\x{4e00}-\x{9fa5}]+)\"&gt;/u', $str, $match_city);
+$user_city = $match_city[1];
+
+// åŒ¹é…å·¥ä½œ
+//&lt;span class="employment item" title="äººè§äººéª‚çš„å…¬å¸"&gt;äººè§äººéª‚çš„å…¬å¸&lt;/span&gt;
+preg_match('/&lt;span.+class=\"?employment.+\"?.+\"([\x{4e00}-\x{9fa5}]+)\"&gt;/u', $str, $match_employment);
+$user_employ = $match_employment[1];
+
+// åŒ¹é…èŒä½
+// &lt;span class="position item" title="ç¨‹åºçŒ¿"&gt;&lt;a href="/topic/19590046" title="ç¨‹åºçŒ¿" class="topic-link" data-token="19590046" data-topicid="13253"&gt;ç¨‹åºçŒ¿&lt;/a&gt;&lt;/span&gt;
+preg_match('/&lt;span.+class=\"?position.+\"?.+\"([\x{4e00}-\x{9fa5}]+).+\"&gt;/u', $str, $match_position);
+$user_position = $match_position[1];
+
+// åŒ¹é…å­¦å†
+// &lt;span class="education item" title="ç ”ç©¶åƒ§"&gt;ç ”ç©¶åƒ§&lt;/span&gt;
+preg_match('/&lt;span.+class=\"?education.+\"?.+\"([\x{4e00}-\x{9fa5}]+)\"&gt;/u', $str, $match_education);
+$user_education = $match_education[1];
+
+// å·¥ä½œæƒ…å†µ
+// &lt;span class="education-extra item" title='æŒ¨è¸¢'&gt;æŒ¨è¸¢&lt;/span&gt;
+preg_match('/&lt;span.+class=\"?education-extra.+\"?.+&gt;([\x{4e00}-
+\x{9fa5}]+)&lt;/u', $str, $match_education_extra);
+$user_education_extra = $match_education_extra[1];
+
+
+// åŒ¹é…å…³æ³¨è¯é¢˜æ•°é‡
+// class="zg-link-litblue"&gt;&lt;strong&gt;41 ä¸ªè¯é¢˜&lt;/strong&gt;&lt;/a&gt;
+preg_match('/class=\"?zg-link-litblue\"?&gt;&lt;strong&gt;(\d+)\s.+strong&gt;/i', $str, $match_topic);
+$user_topic = $match_topic[1];
+
+// å…³æ³¨äººæ•°
+// &lt;span class="zg-gray-normal"&gt;å…³æ³¨äº†
+preg_match_all('/&lt;strong&gt;(\d+)&lt;.+&lt;label&gt;/i', $str, $match_care);
+$user_care = $match_care[1][0];
+$user_be_careed = $match_care[1][1];
+
+// å†å²æµè§ˆé‡
+// &lt;span class="zg-gray-normal"&gt;ä¸ªäººä¸»é¡µè¢« &lt;strong&gt;17&lt;/strong&gt; äººæµè§ˆ&lt;/span&gt;
+preg_match('/class=\"?zg-gray-normal\"?.+&gt;(\d+)&lt;.+span&gt;/i', $str, $match_browse);
+$user_browse = $match_browse[1];
+</code></pre>
+<h2>æ•°æ®å…¥åº“å’Œç¨‹åºä¼˜åŒ–</h2>
+<p>åœ¨æŠ“å–çš„è¿‡ç¨‹ä¸­ï¼Œæœ‰æ¡ä»¶çš„è¯ï¼Œä¸€å®šè¦é€šè¿‡rediså…¥åº“ï¼Œç¡®å®èƒ½æå‡æŠ“å–å’Œå…¥åº“æ•ˆç‡ã€‚æ²¡æœ‰æ¡ä»¶çš„è¯åªèƒ½é€šè¿‡sqlä¼˜åŒ–ã€‚è¿™é‡Œæ¥å‡ å‘å¿ƒå¾·ã€‚</p>
+<ul>
+<li><p>æ•°æ®åº“è¡¨è®¾è®¡ç´¢å¼•ä¸€å®šè¦æ…é‡ã€‚åœ¨spiderçˆ¬å–çš„è¿‡ç¨‹ä¸­ï¼Œå»ºè®®å‡ºäº†ç”¨æˆ·åï¼Œå·¦å³å­—æ®µéƒ½ä¸è¦ç´¢å¼•ï¼ŒåŒ…æ‹¬ä¸»é”®éƒ½ä¸è¦ï¼Œ<code>å°½å¯èƒ½çš„æé«˜å…¥åº“æ•ˆç‡</code>ï¼Œè¯•æƒ³5000wçš„æ•°æ®ï¼Œæ¯æ¬¡æ·»åŠ ä¸€ä¸ªï¼Œå»ºç«‹ç´¢å¼•éœ€è¦å¤šå°‘æ¶ˆè€—ã€‚ç­‰æŠ“å–å®Œæ¯•ï¼Œéœ€è¦åˆ†ææ•°æ®æ—¶ï¼Œæ‰¹é‡å»ºç«‹ç´¢å¼•ã€‚</p></li>
+<li>
+<p>æ•°æ®å…¥åº“å’Œæ›´æ–°æ“ä½œï¼Œä¸€å®šè¦æ‰¹é‡ã€‚ mysql å®˜æ–¹ç»™å‡ºçš„å¢åˆ æ”¹çš„å»ºè®®å’Œé€Ÿåº¦ï¼š<a href="javascript:if(confirm('http://dev.mysql.com/doc/refman/5.7/en/insert-speed.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://dev.mysql.com/doc/refman/5.7/en/insert-speed.html'" tppabs="http://dev.mysql.com/doc/refman/5.7/en/insert-speed.html">http://dev.mysql.com/doc/refman/5.7/en/insert-speed.html</a></p>
+<pre><code># å®˜æ–¹çš„æœ€ä¼˜æ‰¹é‡æ’å…¥
+INSERT INTO yourtable VALUES (1,2), (5,5), ...;</code></pre>
+</li>
+<li>
+<p>éƒ¨ç½²æ“ä½œã€‚ç¨‹åºåœ¨æŠ“å–è¿‡ç¨‹ä¸­ï¼Œæœ‰å¯èƒ½ä¼šå‡ºç°å¼‚å¸¸æŒ‚æ‰ï¼Œä¸ºäº†ä¿è¯é«˜æ•ˆç¨³å®šï¼Œå°½å¯èƒ½çš„å†™ä¸€ä¸ªå®šæ—¶è„šæœ¬ã€‚æ¯éš”ä¸€æ®µæ—¶é—´å¹²æ‰ï¼Œé‡æ–°è·‘ï¼Œè¿™æ ·å³ä½¿å¼‚å¸¸æŒ‚æ‰ä¹Ÿä¸ä¼šæµªè´¹å¤ªå¤šå®è´µæ—¶é—´ï¼Œæ¯•ç«Ÿï¼Œtime is moneyã€‚</p>
+<pre><code>#!/bin/bash
+
+# å¹²æ‰
+ps aux |grep spider |awk '{print $2}'|xargs kill -9
+sleep 5s
+
+# é‡æ–°è·‘
+nohup /home/cuixiaohuan/lamp/php5/bin/php /home/cuixiaohuan/php/zhihu_spider/spider_new.php &amp;    </code></pre>
+</li>
+</ul>
+<h2>æ•°æ®åˆ†æå‘ˆç°</h2>
+<p>æ•°æ®çš„å‘ˆç°ä¸»è¦ä½¿ç”¨echarts 3.0ï¼Œæ„Ÿè§‰å¯¹äºç§»åŠ¨ç«¯å…¼å®¹è¿˜ä¸é”™ã€‚å…¼å®¹ç§»åŠ¨ç«¯çš„é¡µé¢å“åº”å¼å¸ƒå±€ä¸»è¦é€šè¿‡å‡ ä¸ªç®€å•çš„cssæ§åˆ¶ï¼Œä»£ç å¦‚ä¸‹</p>
+<pre><code>/*å…¼å®¹æ€§å’Œå“åº”å¼divè®¾è®¡*/
+@media screen and (max-width: 480px) {
+    body{
+        padding: 0 ;
+    }
+    .adapt-div {
+        width: 100% ;
+        float: none ;
+        margin: 20px 0;
+    }
+
+    .half-div {
+        height: 350px ;
+        margin-bottom: 10px;
+    }
+
+    .whole-div {
+        height: 350px;
+    }
+}
+&lt;!-- æ•´å—å®Œæ•´å¸ƒå±€ï¼ŒåŠå—åœ¨webç«¯é‡‡ç”¨floatçš„æ–¹å¼ï¼Œç§»åŠ¨ç«¯å»æ‰--&gt;
+.half-div {
+    width: 48%;
+    height: 430px;
+    margin: 1%;
+    float: left
+}
+
+.whole-div {
+    width: 98%;
+    height: 430px;
+    margin: 1%;
+    float: left
+}
+</code></pre>
+<h2>ä¸è¶³å’Œå¾…å­¦ä¹ </h2>
+<p>æ•´ä¸ªè¿‡ç¨‹ä¸­æ¶‰åŠphp,shell,js,css,html,æ­£åˆ™ç­‰è¯­è¨€å’Œéƒ¨ç½²ç­‰åŸºç¡€çŸ¥è¯†ï¼Œä½†è¿˜æœ‰è¯¸å¤šéœ€è¦æ”¹è¿›å®Œå–„ï¼Œå°æ‹½ç‰¹æ­¤è®°å½•ï¼Œåç»­è¡¥å……ä¾‹ï¼š</p>
+<ul>
+<li><p>php é‡‡ç”¨multiculè¿›è¡Œå¤šçº¿ç¨‹ã€‚</p></li>
+<li><p>æ­£åˆ™åŒ¹é…è¿›ä¸€æ­¥ä¼˜åŒ–</p></li>
+<li><p>éƒ¨ç½²å’ŒæŠ“å–è¿‡ç¨‹é‡‡ç”¨redisæå‡å­˜å‚¨</p></li>
+<li><p>ç§»åŠ¨ç«¯å¸ƒå±€çš„å…¼å®¹æ€§æå‡</p></li>
+<li><p>jsçš„æ¨¡å—åŒ–å’Œsassä¹¦å†™cssã€‚</p></li>
+</ul>
+<p>ã€è½¬è½½è¯·æ³¨æ˜ï¼š<a href="javascript:if(confirm('http://cuihuan.net/article/php%E7%88%AC%E8%99%AB%EF%BC%9A%E7%9F%A5%E4%B9%8E%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E7%88%AC%E5%8F%96%E5%92%8C%E5%88%86%E6%9E%90.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://cuihuan.net/article/php%E7%88%AC%E8%99%AB%EF%BC%9A%E7%9F%A5%E4%B9%8E%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E7%88%AC%E5%8F%96%E5%92%8C%E5%88%86%E6%9E%90.html'" tppabs="http://cuihuan.net/article/php%E7%88%AC%E8%99%AB%EF%BC%9A%E7%9F%A5%E4%B9%8E%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E7%88%AC%E5%8F%96%E5%92%8C%E5%88%86%E6%9E%90.html">phpçˆ¬è™«ï¼šçŸ¥ä¹ç”¨æˆ·æ•°æ®çˆ¬å–å’Œåˆ†æ</a> | <a href="javascript:if(confirm('http://cuihuan.net/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://cuihuan.net/'" tppabs="http://cuihuan.net/">é è°±å´”å°æ‹½</a> ã€‘</p>
+</body></html>
+                </div>
+                                                
+                <div class="clearfix mt10">
+                    <ul class="article-operation list-inline pull-left"><li><a href="1190000004357994.htm" tppabs="https://segmentfault.com/a/1190000004357994">2016å¹´01æœˆ24æ—¥å‘å¸ƒ</a></li><li class="dropdown js__content-ops" data-module="article"
+                                data-id="1190000004357994"
+                                data-typetext="æ–‡ç« "><a href="javascript:void(0);" class="dropdown-toggle text-muted" data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a><ul class="dropdown-menu dropdown-menu-left"><li><a href="#911"
+                                           data-toggle="modal"
+                                           data-target="#911"
+                                           data-action="report"
+                                        >ä¸¾æŠ¥</a></li></ul></li></ul>
+                    <div class="pull-right">
+                        <div class="widget-share__full" data-text="phpçˆ¬è™«ï¼šçŸ¥ä¹ç”¨æˆ·æ•°æ®çˆ¬å–å’Œåˆ†æ"
+ data-url="https://segmentfault.com/a/1190000004357994" data-shorturl="http://sfau.lt/b5srSo"></div>
+
+
+                    </div>
+                </div>
+                <div class="mt10 text-center"><button type="button" id="mainLike" data-id="1190000004357994"
+                                    class="btn btn-success btn-lg mr15 "><span id="mainLikeText">èµ</span>&nbsp;&nbsp;<span class="seprator">|</span>&nbsp;&nbsp;
+                                <span id="mainLikeNum">7 </span></button><button type="button" id="mainBookmark" data-type="article" data-id="1190000004357994"
+                                    class="btn btn-default btn-lg "><span id="mainBookmarkText">æ”¶è—</span>&nbsp;&nbsp;<span class="seprator">|</span>&nbsp;&nbsp;<span id="mainBookmarkNum">57</span></button></div>
+                                                <div id="mm_124884735_33830642_143436142" class="mt20 ad-detail-mm hidden-xs"></div>
+                <style>
+                    #mm_124884735_33830642_143436142 {
+                        display: flex;
+                        justify-content: center;
+                    }
+                </style>
+
+                                    <div class="recommend-post pt30 mt40 mb30 border-top">
+                        <div class="row">
+                            <div class="col-md-8">
+                                                                    <h4 class="mt0">ä½ å¯èƒ½æ„Ÿå…´è¶£çš„æ–‡ç« </h4>
+                                    <ul class="widget-links list-unstyled">
+                                                                                    <li class="widget-links__item">
+                                                <a href="javascript:if(confirm('https://segmentfault.com/a/1190000012764547  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/a/1190000012764547'" tppabs="https://segmentfault.com/a/1190000012764547"
+                                                   title="33æ¬¾ä½ å¯èƒ½ä¸çŸ¥é“çš„å¼€æºçˆ¬è™«è½¯ä»¶å·¥å…·">33æ¬¾ä½ å¯èƒ½ä¸çŸ¥é“çš„å¼€æºçˆ¬è™«è½¯ä»¶å·¥å…·</a>
+                                                <small class="text-muted">
+                                                    5 æ”¶è—ï¼Œ54
+                                                    æµè§ˆ
+                                                </small>
+                                            </li>
+                                                                                    <li class="widget-links__item">
+                                                <a href="javascript:if(confirm('https://segmentfault.com/a/1190000000396287  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/a/1190000000396287'" tppabs="https://segmentfault.com/a/1190000000396287"
+                                                   title="å¦‚ä½•åœ¨ç½‘é¡µä¸Šéšè—ä½ çš„Emailé‚®ä»¶åœ°å€">å¦‚ä½•åœ¨ç½‘é¡µä¸Šéšè—ä½ çš„Emailé‚®ä»¶åœ°å€</a>
+                                                <small class="text-muted">
+                                                    7 æ”¶è—ï¼Œ3.4k
+                                                    æµè§ˆ
+                                                </small>
+                                            </li>
+                                                                                    <li class="widget-links__item">
+                                                <a href="javascript:if(confirm('https://segmentfault.com/a/1190000009841834  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/a/1190000009841834'" tppabs="https://segmentfault.com/a/1190000009841834"
+                                                   title=" è°ˆè°ˆçˆ¬è™«çš„ç›¸å…³æŠ€æœ¯"> è°ˆè°ˆçˆ¬è™«çš„ç›¸å…³æŠ€æœ¯</a>
+                                                <small class="text-muted">
+                                                    21 æ”¶è—ï¼Œ2.1k
+                                                    æµè§ˆ
+                                                </small>
+                                            </li>
+                                                                            </ul>
+                                                            </div>
+                            <div class="col-md-4">
+                                                                    <div class="article-license">
+                                                                                                                            <img class="mb5" src="../../static.segmentfault.com/v-5a55e741/global/img/creativecommons-sa.svg" tppabs="https://static.segmentfault.com/v-5a55e741/global/img/creativecommons-sa.svg"
+                                                 height="24"/><br/>
+                                                                                                                        <div class="license-item text-muted">
+                                            æœ¬ä½œå“é‡‡ç”¨ <a
+                                                    href="javascript:if(confirm('https://creativecommons.org/licenses/by-nc-sa/4.0/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://creativecommons.org/licenses/by-nc-sa/4.0/'" tppabs="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                                                    class="alert-link">çŸ¥è¯†å…±äº«ç½²å-éå•†ä¸šæ€§ä½¿ç”¨-ç›¸åŒæ–¹å¼å…±äº« 4.0 å›½é™…è®¸å¯åè®®</a> è¿›è¡Œè®¸å¯
+                                            ã€‚
+                                        </div>
+                                        
+                                    </div>
+                                                            </div>
+                        </div>
+
+                    </div>
+                                <!-- <ul class="list-unstyled text-muted mt30">
+                                        <li>ä¸Šä¸€ç¯‡ï¼š<a href="/a/1190000004279639">YII2æ•°æ®åº“æŸ¥è¯¢å®è·µ</a></li>
+                                                            <li class="mt5">ä¸‹ä¸€ç¯‡ï¼š<a href="/a/1190000004512967">postMessageå¤„ç†iframe è·¨åŸŸé—®é¢˜</a></li>
+                                    </ul> -->
+
+                <h2 class="h4 post-comment-title"></h2>
+                
+        <div class="comments--news comments--default comments--article 
+    " 
+    data-id="1190000004357994" data-user-id="" data-author-id="1030000003717373 "
+         data-is-admin="null" id="goToReplyArea">
+                    <div class="mb10 clearfix">
+                <strong class="comments-stat pull-left mr10">8 æ¡è¯„è®º</strong>
+
+                                                    <div class="btn-group btn-group-xs pull-right comments-sort btn-group-menu" role="menu">
+                        <a href="javascript:;" 
+                           class="btn btn-default active" data-sort="default">é»˜è®¤æ’åº</a>
+                        <a href="javascript:;" 
+                           class="btn btn-default" data-sort="desc">æ—¶é—´æ’åº</a>
+                    </div>
+                            </div>
+                <div class="comments-container">
+                                <div class="comments-list">
+                <div class="comments-item" data-id="1050000004379558">
+            <div class="pull-left">
+                <a href="javascript:if(confirm('https://segmentfault.com/u/cuixiaozhuai  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/cuixiaozhuai'" tppabs="https://segmentfault.com/u/cuixiaozhuai" target="_blank"><img class="avatar-32 " src="../../sfault-avatar.b0.upaiyun.com/305/322/3053223291-564c4e7d37faa_big64.jpg" tppabs="https://sfault-avatar.b0.upaiyun.com/305/322/3053223291-564c4e7d37faa_big64" alt=""></a>
+            </div>
+            <div class="comments-content">
+                <div class="comment-trigger">
+                    <div class="pull-right comment-option">
+                                                <a href="#911" class="ml10" data-toggle="modal" data-target="#911" data-action="report" data-action-text="ä¸¾æŠ¥" data-module="comment" data-id="1050000004379558" data-typetext="è¯„è®º" data-placement="top" title="ä¸¾æŠ¥"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+                                            </div>
+                    <strong><a target="_blank" href="javascript:if(confirm('https://segmentfault.com/u/cuixiaozhuai  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/cuixiaozhuai'" tppabs="https://segmentfault.com/u/cuixiaozhuai">å´”å°æ‹½</a></strong>
+                    <span class="comments-isAuthor ">ä½œè€…</span>
+                    <span class="comments-date">  Â·  2016å¹´01æœˆ28æ—¥</span>
+                </div>
+
+                <div class="fmt mb10"><p>æ•´ç†å¥½äº†ä¸Šä¼ ï¼Œä¸Šä¼ äº†ï¼Œå‘ŠçŸ¥ä¸€ä¸‹ã€‚<br>å…¶å®æ¨èæŒ‰ç…§ä¸Šé¢æ­¥éª¤è‡ªå·±å†™ä¸€ä¸ªï¼Œä¸æ˜¯ç‰¹åˆ«å¤æ‚ï¼</p></div>
+
+                <form action="javascript:if(confirm('https://segmentfault.com/api/comment/1050000004379558/edit  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/comment/1050000004379558/edit'" tppabs="https://segmentfault.com/api/comment/1050000004379558/edit">
+                    <div class="form-group">
+                        <textarea class="editTextarea mono form-control mb10 hidden" rows="1" name="text" style="height: 28px; overflow: hidden; word-wrap: break-word;" >æ•´ç†å¥½äº†ä¸Šä¼ ï¼Œä¸Šä¼ äº†ï¼Œå‘ŠçŸ¥ä¸€ä¸‹ã€‚
+å…¶å®æ¨èæŒ‰ç…§ä¸Šé¢æ­¥éª¤è‡ªå·±å†™ä¸€ä¸ªï¼Œä¸æ˜¯ç‰¹åˆ«å¤æ‚ï¼</textarea>
+                    </div>
+                </form>
+
+                <p class="comment-ops not-reply">
+                    <span class="comments-zan ">
+                        <i class="fa fa-thumbs-up mr4" aria-hidden="true"></i>
+                        <span class="comments-zan-text">èµ</span>
+                        <span class="comments-zan-value">+1</span>
+                    </span>
+                    
+                    <span class="ml15 comments-reply-btn">å›å¤</span>
+
+                    <span class="pull-right editBtns hidden">
+                      <button class="btn btn-link btn-xs cancel" type="button">å–æ¶ˆ</button>
+                      <button class="btn btn-primary btn-xs edit ml10" type="button">ä¿å­˜</button>
+                    </span>
+                </p>
+
+                <div class="reply-list reply-list--empty">
+
+                    
+                    <div class="reply-item reply-item--ops" data-obj="obj">
+                        <a class="reply-inner-btn" href="javascript:;">æ·»åŠ å›å¤</a>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+                <div class="comments-item" data-id="1050000004453387">
+            <div class="pull-left">
+                <a href="javascript:if(confirm('https://segmentfault.com/u/skylee  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/skylee'" tppabs="https://segmentfault.com/u/skylee" target="_blank"><img class="avatar-32 " src="../../static.segmentfault.com/v-5a55e741/global/img/user-64.png" tppabs="https://static.segmentfault.com/v-5a55e741/global/img/user-64.png" alt=""></a>
+            </div>
+            <div class="comments-content">
+                <div class="comment-trigger">
+                    <div class="pull-right comment-option">
+                                                <a href="#911" class="ml10" data-toggle="modal" data-target="#911" data-action="report" data-action-text="ä¸¾æŠ¥" data-module="comment" data-id="1050000004453387" data-typetext="è¯„è®º" data-placement="top" title="ä¸¾æŠ¥"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+                                            </div>
+                    <strong><a target="_blank" href="javascript:if(confirm('https://segmentfault.com/u/skylee  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/skylee'" tppabs="https://segmentfault.com/u/skylee">skylee</a></strong>
+                    <span class="comments-isAuthor hide"></span>
+                    <span class="comments-date">  Â·  2016å¹´02æœˆ18æ—¥</span>
+                </div>
+
+                <div class="fmt mb10"><p>phpåˆ†æhtmlå»ºè®®ä½¿ç”¨  <a href="javascript:if(confirm('https://packagist.org/packages/symfony/dom-crawler  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://packagist.org/packages/symfony/dom-crawler'" tppabs="https://packagist.org/packages/symfony/dom-crawler">https://packagist.org/packages/symfony/dom-crawler</a>   phpç‰ˆçš„jQuery</p></div>
+
+                <form action="javascript:if(confirm('https://segmentfault.com/api/comment/1050000004453387/edit  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/comment/1050000004453387/edit'" tppabs="https://segmentfault.com/api/comment/1050000004453387/edit">
+                    <div class="form-group">
+                        <textarea class="editTextarea mono form-control mb10 hidden" rows="1" name="text" style="height: 28px; overflow: hidden; word-wrap: break-word;" >phpåˆ†æhtmlå»ºè®®ä½¿ç”¨  https://packagist.org/packages/symfony/dom-crawler   phpç‰ˆçš„jQuery</textarea>
+                    </div>
+                </form>
+
+                <p class="comment-ops not-reply">
+                    <span class="comments-zan ">
+                        <i class="fa fa-thumbs-up mr4" aria-hidden="true"></i>
+                        <span class="comments-zan-text">èµ</span>
+                        <span class="comments-zan-value">+1</span>
+                    </span>
+                    
+                    <span class="ml15 comments-reply-btn">å›å¤</span>
+
+                    <span class="pull-right editBtns hidden">
+                      <button class="btn btn-link btn-xs cancel" type="button">å–æ¶ˆ</button>
+                      <button class="btn btn-primary btn-xs edit ml10" type="button">ä¿å­˜</button>
+                    </span>
+                </p>
+
+                <div class="reply-list reply-list--empty">
+
+                    
+                    <div class="reply-item reply-item--ops" data-obj="obj">
+                        <a class="reply-inner-btn" href="javascript:;">æ·»åŠ å›å¤</a>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+                <div class="comments-item" data-id="1050000004374942">
+            <div class="pull-left">
+                <a href="javascript:if(confirm('https://segmentfault.com/u/wfywfy  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/wfywfy'" tppabs="https://segmentfault.com/u/wfywfy" target="_blank"><img class="avatar-32 " src="../../static.segmentfault.com/v-5a55e741/global/img/user-64.png" tppabs="https://static.segmentfault.com/v-5a55e741/global/img/user-64.png" alt=""></a>
+            </div>
+            <div class="comments-content">
+                <div class="comment-trigger">
+                    <div class="pull-right comment-option">
+                                                <a href="#911" class="ml10" data-toggle="modal" data-target="#911" data-action="report" data-action-text="ä¸¾æŠ¥" data-module="comment" data-id="1050000004374942" data-typetext="è¯„è®º" data-placement="top" title="ä¸¾æŠ¥"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+                                            </div>
+                    <strong><a target="_blank" href="javascript:if(confirm('https://segmentfault.com/u/wfywfy  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/wfywfy'" tppabs="https://segmentfault.com/u/wfywfy">wfywfy</a></strong>
+                    <span class="comments-isAuthor hide"></span>
+                    <span class="comments-date">  Â·  2016å¹´01æœˆ27æ—¥</span>
+                </div>
+
+                <div class="fmt mb10"><p>githubåœ°å€ï¼Ÿ</p></div>
+
+                <form action="javascript:if(confirm('https://segmentfault.com/api/comment/1050000004374942/edit  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/comment/1050000004374942/edit'" tppabs="https://segmentfault.com/api/comment/1050000004374942/edit">
+                    <div class="form-group">
+                        <textarea class="editTextarea mono form-control mb10 hidden" rows="1" name="text" style="height: 28px; overflow: hidden; word-wrap: break-word;" >githubåœ°å€ï¼Ÿ</textarea>
+                    </div>
+                </form>
+
+                <p class="comment-ops not-reply">
+                    <span class="comments-zan ">
+                        <i class="fa fa-thumbs-up mr4" aria-hidden="true"></i>
+                        <span class="comments-zan-text">èµ</span>
+                        <span class="comments-zan-value"></span>
+                    </span>
+                    
+                    <span class="ml15 comments-reply-btn">å›å¤</span>
+
+                    <span class="pull-right editBtns hidden">
+                      <button class="btn btn-link btn-xs cancel" type="button">å–æ¶ˆ</button>
+                      <button class="btn btn-primary btn-xs edit ml10" type="button">ä¿å­˜</button>
+                    </span>
+                </p>
+
+                <div class="reply-list reply-list--empty">
+
+                    
+                    <div class="reply-item reply-item--ops" data-obj="obj">
+                        <a class="reply-inner-btn" href="javascript:;">æ·»åŠ å›å¤</a>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+                <div class="comments-item" data-id="1050000004378515">
+            <div class="pull-left">
+                <a href="javascript:if(confirm('https://segmentfault.com/u/mon  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/mon'" tppabs="https://segmentfault.com/u/mon" target="_blank"><img class="avatar-32 " src="../../sfault-avatar.b0.upaiyun.com/384/959/3849591512-1030000000350773_big64.png" tppabs="https://sfault-avatar.b0.upaiyun.com/384/959/3849591512-1030000000350773_big64" alt=""></a>
+            </div>
+            <div class="comments-content">
+                <div class="comment-trigger">
+                    <div class="pull-right comment-option">
+                                                <a href="#911" class="ml10" data-toggle="modal" data-target="#911" data-action="report" data-action-text="ä¸¾æŠ¥" data-module="comment" data-id="1050000004378515" data-typetext="è¯„è®º" data-placement="top" title="ä¸¾æŠ¥"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+                                            </div>
+                    <strong><a target="_blank" href="javascript:if(confirm('https://segmentfault.com/u/mon  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/mon'" tppabs="https://segmentfault.com/u/mon">monw3c</a></strong>
+                    <span class="comments-isAuthor hide"></span>
+                    <span class="comments-date">  Â·  2016å¹´01æœˆ28æ—¥</span>
+                </div>
+
+                <div class="fmt mb10"><p>ä¸é”™ä¸é”™</p></div>
+
+                <form action="javascript:if(confirm('https://segmentfault.com/api/comment/1050000004378515/edit  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/comment/1050000004378515/edit'" tppabs="https://segmentfault.com/api/comment/1050000004378515/edit">
+                    <div class="form-group">
+                        <textarea class="editTextarea mono form-control mb10 hidden" rows="1" name="text" style="height: 28px; overflow: hidden; word-wrap: break-word;" >ä¸é”™ä¸é”™</textarea>
+                    </div>
+                </form>
+
+                <p class="comment-ops not-reply">
+                    <span class="comments-zan ">
+                        <i class="fa fa-thumbs-up mr4" aria-hidden="true"></i>
+                        <span class="comments-zan-text">èµ</span>
+                        <span class="comments-zan-value"></span>
+                    </span>
+                    
+                    <span class="ml15 comments-reply-btn">å›å¤</span>
+
+                    <span class="pull-right editBtns hidden">
+                      <button class="btn btn-link btn-xs cancel" type="button">å–æ¶ˆ</button>
+                      <button class="btn btn-primary btn-xs edit ml10" type="button">ä¿å­˜</button>
+                    </span>
+                </p>
+
+                <div class="reply-list reply-list--empty">
+
+                    
+                    <div class="reply-item reply-item--ops" data-obj="obj">
+                        <a class="reply-inner-btn" href="javascript:;">æ·»åŠ å›å¤</a>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+                <div class="comments-item" data-id="1050000004459695">
+            <div class="pull-left">
+                <a href="javascript:if(confirm('https://segmentfault.com/u/cuixiaozhuai  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/cuixiaozhuai'" tppabs="https://segmentfault.com/u/cuixiaozhuai" target="_blank"><img class="avatar-32 " src="../../sfault-avatar.b0.upaiyun.com/305/322/3053223291-564c4e7d37faa_big64.jpg" tppabs="https://sfault-avatar.b0.upaiyun.com/305/322/3053223291-564c4e7d37faa_big64" alt=""></a>
+            </div>
+            <div class="comments-content">
+                <div class="comment-trigger">
+                    <div class="pull-right comment-option">
+                                                <a href="#911" class="ml10" data-toggle="modal" data-target="#911" data-action="report" data-action-text="ä¸¾æŠ¥" data-module="comment" data-id="1050000004459695" data-typetext="è¯„è®º" data-placement="top" title="ä¸¾æŠ¥"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+                                            </div>
+                    <strong><a target="_blank" href="javascript:if(confirm('https://segmentfault.com/u/cuixiaozhuai  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/cuixiaozhuai'" tppabs="https://segmentfault.com/u/cuixiaozhuai">å´”å°æ‹½</a></strong>
+                    <span class="comments-isAuthor ">ä½œè€…</span>
+                    <span class="comments-date">  Â·  2016å¹´02æœˆ19æ—¥</span>
+                </div>
+
+                <div class="fmt mb10"><p>èµï¼Œå­¦ä¹ äº†ï¼</p></div>
+
+                <form action="javascript:if(confirm('https://segmentfault.com/api/comment/1050000004459695/edit  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/comment/1050000004459695/edit'" tppabs="https://segmentfault.com/api/comment/1050000004459695/edit">
+                    <div class="form-group">
+                        <textarea class="editTextarea mono form-control mb10 hidden" rows="1" name="text" style="height: 28px; overflow: hidden; word-wrap: break-word;" >èµï¼Œå­¦ä¹ äº†ï¼</textarea>
+                    </div>
+                </form>
+
+                <p class="comment-ops not-reply">
+                    <span class="comments-zan ">
+                        <i class="fa fa-thumbs-up mr4" aria-hidden="true"></i>
+                        <span class="comments-zan-text">èµ</span>
+                        <span class="comments-zan-value"></span>
+                    </span>
+                    
+                    <span class="ml15 comments-reply-btn">å›å¤</span>
+
+                    <span class="pull-right editBtns hidden">
+                      <button class="btn btn-link btn-xs cancel" type="button">å–æ¶ˆ</button>
+                      <button class="btn btn-primary btn-xs edit ml10" type="button">ä¿å­˜</button>
+                    </span>
+                </p>
+
+                <div class="reply-list reply-list--empty">
+
+                    
+                    <div class="reply-item reply-item--ops" data-obj="obj">
+                        <a class="reply-inner-btn" href="javascript:;">æ·»åŠ å›å¤</a>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+                <div class="comments-item" data-id="1050000004460029">
+            <div class="pull-left">
+                <a href="javascript:if(confirm('https://segmentfault.com/u/jerrica  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/jerrica'" tppabs="https://segmentfault.com/u/jerrica" target="_blank"><img class="avatar-32 " src="../../static.segmentfault.com/v-5a55e741/global/img/user-64.png" tppabs="https://static.segmentfault.com/v-5a55e741/global/img/user-64.png" alt=""></a>
+            </div>
+            <div class="comments-content">
+                <div class="comment-trigger">
+                    <div class="pull-right comment-option">
+                                                <a href="#911" class="ml10" data-toggle="modal" data-target="#911" data-action="report" data-action-text="ä¸¾æŠ¥" data-module="comment" data-id="1050000004460029" data-typetext="è¯„è®º" data-placement="top" title="ä¸¾æŠ¥"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+                                            </div>
+                    <strong><a target="_blank" href="javascript:if(confirm('https://segmentfault.com/u/jerrica  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/jerrica'" tppabs="https://segmentfault.com/u/jerrica">jerrica</a></strong>
+                    <span class="comments-isAuthor hide"></span>
+                    <span class="comments-date">  Â·  2016å¹´02æœˆ19æ—¥</span>
+                </div>
+
+                <div class="fmt mb10"><p>ä½ å¥½ï¼Œä½ æ˜¯å“ªé‡Œäººå•Šï¼Œæˆ‘çš„QQ250667331ï¼ŒåŠ æˆ‘ï¼Œåˆä½œå“¦</p></div>
+
+                <form action="javascript:if(confirm('https://segmentfault.com/api/comment/1050000004460029/edit  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/comment/1050000004460029/edit'" tppabs="https://segmentfault.com/api/comment/1050000004460029/edit">
+                    <div class="form-group">
+                        <textarea class="editTextarea mono form-control mb10 hidden" rows="1" name="text" style="height: 28px; overflow: hidden; word-wrap: break-word;" >ä½ å¥½ï¼Œä½ æ˜¯å“ªé‡Œäººå•Šï¼Œæˆ‘çš„QQ250667331ï¼ŒåŠ æˆ‘ï¼Œåˆä½œå“¦</textarea>
+                    </div>
+                </form>
+
+                <p class="comment-ops not-reply">
+                    <span class="comments-zan ">
+                        <i class="fa fa-thumbs-up mr4" aria-hidden="true"></i>
+                        <span class="comments-zan-text">èµ</span>
+                        <span class="comments-zan-value"></span>
+                    </span>
+                    
+                    <span class="ml15 comments-reply-btn">å›å¤</span>
+
+                    <span class="pull-right editBtns hidden">
+                      <button class="btn btn-link btn-xs cancel" type="button">å–æ¶ˆ</button>
+                      <button class="btn btn-primary btn-xs edit ml10" type="button">ä¿å­˜</button>
+                    </span>
+                </p>
+
+                <div class="reply-list reply-list--empty">
+
+                    
+                    <div class="reply-item reply-item--ops" data-obj="obj">
+                        <a class="reply-inner-btn" href="javascript:;">æ·»åŠ å›å¤</a>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+                <div class="comments-item" data-id="1050000007594660">
+            <div class="pull-left">
+                <a href="javascript:if(confirm('https://segmentfault.com/u/lyhiving  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/lyhiving'" tppabs="https://segmentfault.com/u/lyhiving" target="_blank"><img class="avatar-32 " src="../../static.segmentfault.com/v-5a55e741/global/img/user-64.png" tppabs="https://static.segmentfault.com/v-5a55e741/global/img/user-64.png" alt=""></a>
+            </div>
+            <div class="comments-content">
+                <div class="comment-trigger">
+                    <div class="pull-right comment-option">
+                                                <a href="#911" class="ml10" data-toggle="modal" data-target="#911" data-action="report" data-action-text="ä¸¾æŠ¥" data-module="comment" data-id="1050000007594660" data-typetext="è¯„è®º" data-placement="top" title="ä¸¾æŠ¥"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+                                            </div>
+                    <strong><a target="_blank" href="javascript:if(confirm('https://segmentfault.com/u/lyhiving  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/lyhiving'" tppabs="https://segmentfault.com/u/lyhiving">lyhiving</a></strong>
+                    <span class="comments-isAuthor hide"></span>
+                    <span class="comments-date">  Â·  2016å¹´11æœˆ25æ—¥</span>
+                </div>
+
+                <div class="fmt mb10"><p>è¿™ä¸ªè¦åŠ åœ¨symfonyä¸‹é¢ï¼Œä¸æ–¹ä¾¿å‘€</p></div>
+
+                <form action="javascript:if(confirm('https://segmentfault.com/api/comment/1050000007594660/edit  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/comment/1050000007594660/edit'" tppabs="https://segmentfault.com/api/comment/1050000007594660/edit">
+                    <div class="form-group">
+                        <textarea class="editTextarea mono form-control mb10 hidden" rows="1" name="text" style="height: 28px; overflow: hidden; word-wrap: break-word;" >è¿™ä¸ªè¦åŠ åœ¨symfonyä¸‹é¢ï¼Œä¸æ–¹ä¾¿å‘€</textarea>
+                    </div>
+                </form>
+
+                <p class="comment-ops not-reply">
+                    <span class="comments-zan ">
+                        <i class="fa fa-thumbs-up mr4" aria-hidden="true"></i>
+                        <span class="comments-zan-text">èµ</span>
+                        <span class="comments-zan-value"></span>
+                    </span>
+                    
+                    <span class="ml15 comments-reply-btn">å›å¤</span>
+
+                    <span class="pull-right editBtns hidden">
+                      <button class="btn btn-link btn-xs cancel" type="button">å–æ¶ˆ</button>
+                      <button class="btn btn-primary btn-xs edit ml10" type="button">ä¿å­˜</button>
+                    </span>
+                </p>
+
+                <div class="reply-list reply-list--empty">
+
+                    
+                    <div class="reply-item reply-item--ops" data-obj="obj">
+                        <a class="reply-inner-btn" href="javascript:;">æ·»åŠ å›å¤</a>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+                <div class="comments-item" data-id="1050000012257300">
+            <div class="pull-left">
+                <a href="javascript:if(confirm('https://segmentfault.com/u/windylight  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/windylight'" tppabs="https://segmentfault.com/u/windylight" target="_blank"><img class="avatar-32 " src="../../static.segmentfault.com/v-5a55e741/global/img/user-64.png" tppabs="https://static.segmentfault.com/v-5a55e741/global/img/user-64.png" alt=""></a>
+            </div>
+            <div class="comments-content">
+                <div class="comment-trigger">
+                    <div class="pull-right comment-option">
+                                                <a href="#911" class="ml10" data-toggle="modal" data-target="#911" data-action="report" data-action-text="ä¸¾æŠ¥" data-module="comment" data-id="1050000012257300" data-typetext="è¯„è®º" data-placement="top" title="ä¸¾æŠ¥"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+                                            </div>
+                    <strong><a target="_blank" href="javascript:if(confirm('https://segmentfault.com/u/windylight  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/windylight'" tppabs="https://segmentfault.com/u/windylight">windylight</a></strong>
+                    <span class="comments-isAuthor hide"></span>
+                    <span class="comments-date">  Â·  2017å¹´12æœˆ02æ—¥</span>
+                </div>
+
+                <div class="fmt mb10"><p>ç°åœ¨çŸ¥ä¹çš„ä¸ªäººä¸­å¿ƒå¥½åƒæ”¹å˜å¸ƒå±€ï¼Œè¿™ä¸ªæ­£åˆ™å¥½åƒç”¨ä¸äº†</p></div>
+
+                <form action="javascript:if(confirm('https://segmentfault.com/api/comment/1050000012257300/edit  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/comment/1050000012257300/edit'" tppabs="https://segmentfault.com/api/comment/1050000012257300/edit">
+                    <div class="form-group">
+                        <textarea class="editTextarea mono form-control mb10 hidden" rows="1" name="text" style="height: 28px; overflow: hidden; word-wrap: break-word;" >ç°åœ¨çŸ¥ä¹çš„ä¸ªäººä¸­å¿ƒå¥½åƒæ”¹å˜å¸ƒå±€ï¼Œè¿™ä¸ªæ­£åˆ™å¥½åƒç”¨ä¸äº†</textarea>
+                    </div>
+                </form>
+
+                <p class="comment-ops not-reply">
+                    <span class="comments-zan ">
+                        <i class="fa fa-thumbs-up mr4" aria-hidden="true"></i>
+                        <span class="comments-zan-text">èµ</span>
+                        <span class="comments-zan-value"></span>
+                    </span>
+                    
+                    <span class="ml15 comments-reply-btn">å›å¤</span>
+
+                    <span class="pull-right editBtns hidden">
+                      <button class="btn btn-link btn-xs cancel" type="button">å–æ¶ˆ</button>
+                      <button class="btn btn-primary btn-xs edit ml10" type="button">ä¿å­˜</button>
+                    </span>
+                </p>
+
+                <div class="reply-list reply-list--empty">
+
+                    
+                    <div class="reply-item reply-item--ops" data-obj="obj">
+                        <a class="reply-inner-btn" href="javascript:;">æ·»åŠ å›å¤</a>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+            </div>
+    <div class="comments-loading hide">è½½å…¥ä¸­...</div>
+        <div class="comments-more hide"><a href="javascript:;">æ˜¾ç¤ºæ›´å¤šè¯„è®º</a></div>
+    
+
+                                    <div class="comments-box" id="goToReplyEditor">
+                <div class="pull-left">
+                    <img class="avatar-32 "
+                         src="../../static.segmentfault.com/v-5a55e741/global/img/user-128.png" tppabs="https://static.segmentfault.com/v-5a55e741/global/img/user-128.png"
+                         alt=""/>
+                </div>
+                <div class="comments-box-content">
+                    <form action="javascript:if(confirm('https://segmentfault.com/api/article/1190000004357994/comments/add  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/article/1190000004357994/comments/add'" tppabs="https://segmentfault.com/api/article/1190000004357994/comments/add">
+                        <div class="form-group mb0">
+                            <textarea name="text" rows="3" class="form-control"placeholder="æ–‡æ˜ç¤¾ä¼šï¼Œç†æ€§è¯„è®º"></textarea>
+                            <div class="mt15 text-right">
+                                <button type="button" class="hide"></button>
+                                <button class=" btn btn-primary" type="button">å‘å¸ƒè¯„è®º</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                                                        </div>
+    </div>
+
+
+                                    
+                
+            </div><!-- /.main -->
+
+
+            <div class="col-xs-12 col-md-3 side">
+                
+                <div class="widget-box widget_lives pt0 hidden" style="border-top: none" id="live-recommend-wrapper">
+                    <h2 class="widget-box__title">
+                        è®²å ‚æ¨è
+                        <i class="fa fa-youtube-play fa-sm" aria-hidden="true"></i>
+                        <a href="javascript:if(confirm('https://segmentfault.com/lives  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/lives'" tppabs="https://segmentfault.com/lives" class="pull-right more">æ›´å¤š</a>
+                    </h2>
+                    <div id="live-recommend" class="mb20"></div>
+                </div>
+                
+                                
+                <div id="mm_124884735_33830642_120290173" class="mb25"></div>
+                
+                <div class="widget-box widget-box--blog-info">
+                    <div class="blog__sidebar-author " >
+                                                    <button type="button"
+                                    class="btn btn-sm btn-success follow-user ml10 pull-right"
+                                    data-do="follow"
+                                    data-type="user"
+                                    data-id="1030000003717373">å…³æ³¨ä½œè€…
+                            </button>
+                        
+                        <div class="article__widget--author">
+                            <a href="javascript:if(confirm('https://segmentfault.com/u/cuixiaozhuai  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/cuixiaozhuai'" tppabs="https://segmentfault.com/u/cuixiaozhuai" class="inline-block">
+                                <img class="avatar-40" src="../../sfault-avatar.b0.upaiyun.com/305/322/3053223291-564c4e7d37faa_big64.jpg" tppabs="https://sfault-avatar.b0.upaiyun.com/305/322/3053223291-564c4e7d37faa_big64" alt="å´”å°æ‹½">
+                            </a>
+                            <a class="article__widget-author-name inline-block" href="javascript:if(confirm('https://segmentfault.com/u/cuixiaozhuai  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/u/cuixiaozhuai'" tppabs="https://segmentfault.com/u/cuixiaozhuai">
+                                <strong>å´”å°æ‹½</strong>
+                            </a>
+                            <p class="article__widget-author-text-muted mb0">
+                                <span>1.7k å£°æœ›</span>
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+                                        <div class="blog__sidebar-blog-name">
+                        <p class="article__widget-author-text-muted mt15 mb5">å‘å¸ƒäºä¸“æ </p>
+
+                        <h4 class="fz16"><a style="word-break: break-all;" href="javascript:if(confirm('https://segmentfault.com/blog/cuixiaozhuai  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blog/cuixiaozhuai'" tppabs="https://segmentfault.com/blog/cuixiaozhuai">é è°±å´”å°æ‹½</a></h4>
+                        <p class="article__widget-author-desc">å´”å°æ‹½çš„æŠ€æœ¯åšå®¢ï¼Œå’Œå¤§å®¶äº¤æµï¼Œå­¦ä¹ ï¼Œå…±åŒè¿›æ­¥ã€‚
+</p>
+
+                        <p>
+                            <span class="article__widget-author-text-muted">39 äººå…³æ³¨</span>
+                            
+                                                                    <button type="button mb20"
+                                            class="btn btn-sm btn-default follow-article pull-right"
+                                            data-do="follow"
+                                            data-type="blog"
+                                            data-id="1200000003830925">å…³æ³¨ä¸“æ 
+                                    </button>
+                                
+                                                    </p>
+
+                    </div>
+                    
+
+                </div>
+                
+                
+                                <div id="mm_124884735_33830642_145440102" class="mb25 ad-should-be-fixed"></div>
+ 
+                <div class="post-nav hidden-xs">
+                    <div class="panel panel-default widget-outline">
+                        <div class="panel-heading">ç›®å½•</div>
+                        <div class="panel-body">
+                            <div class="nav-body">
+                                <div class="highlight-title"></div>
+                                <ul class="articleIndex"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div><!-- /.side -->
+        </div>
+    </div>
+</div>
+
+<div id="shareToWeiboModal" class="modal" tabindex='-1'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">Ã—</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">åˆ†äº«</h4>
+            </div>
+            <div class="modal-body">
+                <p class="sfModal-content">
+                    åˆ†äº«åˆ°å¾®åšï¼Ÿ
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default dont-likeweibo" data-dismiss="modal">å–æ¶ˆ</button>
+                <a href="" id="shareLink" class="btn btn-primary done-btn" target="_blank"
+                   onclick="$('#shareToWeiboModal').modal('hide')">åˆ†äº«</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal widget-911" id="911" tabindex='-1'>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title"><span data-model="action"></span><span data-model="type"></span></h4>
+      </div>
+      <div class="modal-body">
+        <form id="reportForm">
+          <!-- åå°è¿”å›ä¿¡æ¯ -->
+          <p class="alert alert-warning" data-model="returnMsg"></p>
+          <div data-role="base">
+            <p>
+              <strong class="required">æˆ‘è¦<span data-model="action"></span>è¯¥<span data-model="type"></span>ï¼Œç†ç”±æ˜¯ï¼š</strong>
+            </p>
+            <ul class="list-unstyled" data-model="list"></ul>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default pull-left" type="button" data-role="back" style="display:none">è¿”å›é‡é€‰</button>
+                <button class="btn btn-default" data-dismiss="modal" type="button">å–æ¶ˆ</button>
+        <button class="btn btn-primary" data-role="submit" type="button">æäº¤</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <div id="loginBanner"  class="hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-7">
+                <h1 class="title">åœ¨ SegmentFaultï¼Œå­¦ä¹ æŠ€èƒ½ã€è§£å†³é—®é¢˜</h1>
+                <p class="desc">æ¯ä¸ªæœˆï¼Œæˆ‘ä»¬å¸®åŠ© 1000 ä¸‡çš„å¼€å‘è€…è§£å†³å„ç§å„æ ·çš„æŠ€æœ¯é—®é¢˜ã€‚å¹¶åŠ©åŠ›ä»–ä»¬åœ¨æŠ€æœ¯èƒ½åŠ›ã€èŒä¸šç”Ÿæ¶¯ã€å½±å“åŠ›ä¸Šè·å¾—æå‡ã€‚</p>
+            </div>
+            <div class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-1">
+                <form class="register-form clearfix" action="javascript:if(confirm('https://segmentfault.com/api/user/phone/register  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/api/user/phone/register'" tppabs="https://segmentfault.com/api/user/phone/register">
+
+                    
+                    <a href="javascript:if(confirm('https://segmentfault.com/user/login  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/user/login'" tppabs="https://segmentfault.com/user/login" class="SFLogin btn btn-lg btn-primary mr15">å…è´¹æ³¨å†Œ</a>
+                    <a href="javascript:if(confirm('https://segmentfault.com/user/login  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/user/login'" tppabs="https://segmentfault.com/user/login" class="SFLogin btn btn-lg btn-primary">ç«‹å³ç™»å½•</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row hidden-xs">
+            <dl class="col-sm-2 site-link">
+                <dt>äº§å“</dt>
+                
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/questions/hottest?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨é—®ç­”  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/questions/hottest?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨é—®ç­”'" tppabs="https://segmentfault.com/questions/hottest?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨é—®ç­”">çƒ­é—¨é—®ç­”</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/blogs/hottest?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨ä¸“æ   \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blogs/hottest?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨ä¸“æ '" tppabs="https://segmentfault.com/blogs/hottest?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨ä¸“æ ">çƒ­é—¨ä¸“æ </a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/lives?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨è®²å ‚  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/lives?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨è®²å ‚'" tppabs="https://segmentfault.com/lives?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=çƒ­é—¨è®²å ‚">çƒ­é—¨è®²å ‚</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/events?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æœ€æ–°æ´»åŠ¨  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/events?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æœ€æ–°æ´»åŠ¨'" tppabs="https://segmentfault.com/events?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æœ€æ–°æ´»åŠ¨">æœ€æ–°æ´»åŠ¨</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/groups?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æŠ€æœ¯åœˆ  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/groups?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æŠ€æœ¯åœˆ'" tppabs="https://segmentfault.com/groups?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æŠ€æœ¯åœˆ">æŠ€æœ¯åœˆ</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/jobs?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æ‰¾å·¥ä½œ  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/jobs?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æ‰¾å·¥ä½œ'" tppabs="https://segmentfault.com/jobs?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=æ‰¾å·¥ä½œ">æ‰¾å·¥ä½œ</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/app?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=app  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/app?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=app'" tppabs="https://segmentfault.com/app?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=product&utm_content=footer-links-hottest-questions&utm_term=app">ç§»åŠ¨å®¢æˆ·ç«¯</a></dd>
+                
+            </dl>
+            
+            <dl class="col-sm-2 site-link">
+                <dt>èµ„æº</dt>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/weekly?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-weekly&utm_term=æ¯å‘¨ç²¾é€‰  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/weekly?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-weekly&utm_term=æ¯å‘¨ç²¾é€‰'" tppabs="https://segmentfault.com/weekly?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-weekly&utm_term=æ¯å‘¨ç²¾é€‰">æ¯å‘¨ç²¾é€‰</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/users?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-users&utm_term=ç”¨æˆ·æ’è¡Œæ¦œ  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/users?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-users&utm_term=ç”¨æˆ·æ’è¡Œæ¦œ'" tppabs="https://segmentfault.com/users?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-users&utm_term=ç”¨æˆ·æ’è¡Œæ¦œ">ç”¨æˆ·æ’è¡Œæ¦œ</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/badges?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-badges&utm_term=å¾½ç«   \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/badges?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-badges&utm_term=å¾½ç« '" tppabs="https://segmentfault.com/badges?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-badges&utm_term=å¾½ç« ">å¾½ç« </a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/faq?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-faq&utm_term=å¸®åŠ©ä¸­å¿ƒ  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/faq?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-faq&utm_term=å¸®åŠ©ä¸­å¿ƒ'" tppabs="https://segmentfault.com/faq?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-faq&utm_term=å¸®åŠ©ä¸­å¿ƒ">å¸®åŠ©ä¸­å¿ƒ</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/repu?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-repu&utm_term=å£°æœ›ä¸æƒé™  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/repu?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-repu&utm_term=å£°æœ›ä¸æƒé™'" tppabs="https://segmentfault.com/repu?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-repu&utm_term=å£°æœ›ä¸æƒé™">å£°æœ›ä¸æƒé™</a></dd>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/community?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-community&utm_term=ç¤¾åŒºæœåŠ¡ä¸­å¿ƒ  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/community?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-community&utm_term=ç¤¾åŒºæœåŠ¡ä¸­å¿ƒ'" tppabs="https://segmentfault.com/community?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-community&utm_term=ç¤¾åŒºæœåŠ¡ä¸­å¿ƒ">ç¤¾åŒºæœåŠ¡ä¸­å¿ƒ</a></dd>
+                <dd><a href="javascript:if(confirm('https://docs.segmentfault.com/?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-docs&utm_term=å¼€å‘æ‰‹å†Œ  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://docs.segmentfault.com/?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-docs&utm_term=å¼€å‘æ‰‹å†Œ'" tppabs="https://docs.segmentfault.com/?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=resource&utm_content=footer-links-docs&utm_term=å¼€å‘æ‰‹å†Œ">å¼€å‘æ‰‹å†Œ</a></dd>
+
+   
+            </dl>
+
+            <dl class="col-sm-2 site-link">
+                <dt>å•†åŠ¡</dt>
+                <dd><a href="javascript:if(confirm('https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-rencai&utm_term=äººæ‰æœåŠ¡  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-rencai&utm_term=äººæ‰æœåŠ¡'" tppabs="https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-rencai&utm_term=äººæ‰æœåŠ¡" target="_blank">äººæ‰æœåŠ¡</a></dd>
+                <dd><a href="javascript:if(confirm('https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-qiyeneixun&utm_term=ä¼ä¸šæœåŠ¡  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-qiyeneixun&utm_term=ä¼ä¸šæœåŠ¡'" tppabs="https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-qiyeneixun&utm_term=ä¼ä¸šæœåŠ¡" target="_blank">ä¼ä¸šåŸ¹è®­</a></dd>
+                <dd><a href="javascript:if(confirm('https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-huodongcehua&utm_term=æ´»åŠ¨ç­–åˆ’  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-huodongcehua&utm_term=æ´»åŠ¨ç­–åˆ’'" tppabs="https://business.segmentfault.com/services.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-services-huodongcehua&utm_term=æ´»åŠ¨ç­–åˆ’" target="_blank">æ´»åŠ¨ç­–åˆ’</a></dd>
+                <dd><a href="javascript:if(confirm('https://business.segmentfault.com/ads.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-ads&utm_term=å¹¿å‘ŠæŠ•æ”¾  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://business.segmentfault.com/ads.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-ads&utm_term=å¹¿å‘ŠæŠ•æ”¾'" tppabs="https://business.segmentfault.com/ads.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-ads&utm_term=å¹¿å‘ŠæŠ•æ”¾" target="_blank">å¹¿å‘ŠæŠ•æ”¾</a></dd>
+                <dd><a href="javascript:if(confirm('https://business.segmentfault.com/contact.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-contact&utm_term=åˆä½œè”ç³»  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://business.segmentfault.com/contact.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-contact&utm_term=åˆä½œè”ç³»'" tppabs="https://business.segmentfault.com/contact.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=business&utm_content=footer-links-contact&utm_term=åˆä½œè”ç³»" target="_blank">åˆä½œè”ç³»</a></dd>
+               
+            </dl>
+            
+            <dl class="col-sm-2 site-link">
+                <dt>å…³äº</dt>
+                <dd><a href="javascript:if(confirm('https://about.segmentfault.com/?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-index&utm_term=å…³äºæˆ‘ä»¬  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://about.segmentfault.com/?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-index&utm_term=å…³äºæˆ‘ä»¬'" tppabs="https://about.segmentfault.com/?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-index&utm_term=å…³äºæˆ‘ä»¬">å…³äºæˆ‘ä»¬</a></dd>
+                <dd><a href="javascript:if(confirm('https://about.segmentfault.com/careers.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-careers&utm_term=åŠ å…¥æˆ‘ä»¬  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://about.segmentfault.com/careers.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-careers&utm_term=åŠ å…¥æˆ‘ä»¬'" tppabs="https://about.segmentfault.com/careers.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-careers&utm_term=åŠ å…¥æˆ‘ä»¬">åŠ å…¥æˆ‘ä»¬</a></dd>
+                <dd><a href="javascript:if(confirm('https://about.segmentfault.com/contact.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-contact&utm_term=è”ç³»æˆ‘ä»¬  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://about.segmentfault.com/contact.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-contact&utm_term=è”ç³»æˆ‘ä»¬'" tppabs="https://about.segmentfault.com/contact.html?utm_source=sf-footer&utm_medium=footer-nav&utm_campaign=about&utm_content=about-contact&utm_term=è”ç³»æˆ‘ä»¬">è”ç³»æˆ‘ä»¬</a></dd>
+            </dl>
+
+            <dl class="col-sm-2 site-link">
+                <dt>å…³æ³¨</dt>
+                                <dd><a href="javascript:if(confirm('https://segmentfault.com/blog/segmentfault  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blog/segmentfault'" tppabs="https://segmentfault.com/blog/segmentfault" target="_blank">äº§å“æŠ€æœ¯æ—¥å¿—</a></dd>
+                                <dd><a href="javascript:if(confirm('https://segmentfault.com/blog/community_admin  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blog/community_admin'" tppabs="https://segmentfault.com/blog/community_admin" target="_blank">ç¤¾åŒºè¿è¥æ—¥å¿—</a></dd>
+                                <dd><a href="javascript:if(confirm('https://segmentfault.com/blog/segmentfault_news  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blog/segmentfault_news'" tppabs="https://segmentfault.com/blog/segmentfault_news" target="_blank">å¸‚åœºè¿è¥æ—¥å¿—</a></dd>
+                                <dd><a href="javascript:if(confirm('https://segmentfault.com/blog/segmentfault_team  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blog/segmentfault_team'" tppabs="https://segmentfault.com/blog/segmentfault_team" target="_blank">å›¢é˜Ÿæ—¥å¿—</a></dd>
+                                <dd><a href="javascript:if(confirm('https://segmentfault.com/blog/interview  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/blog/interview'" tppabs="https://segmentfault.com/blog/interview" target="_blank">ç¤¾åŒºè®¿è°ˆ</a></dd>
+                                <dd>
+                    <ul class="sn-inline">
+                        <li>
+                            <a class="entypo-wechart icon-sn-weixin weixin-popover-qrcode" data-toggle="popover" data-placement="top"  data-content="">å¾®ä¿¡</a>
+                        </li>
+                        <li>
+                            <a href="javascript:if(confirm('http://weibo.com/segmentfault  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/segmentfault'" tppabs="http://weibo.com/segmentfault" target="_blank" class="entypo-weibo icon-sn-weibo" >æ–°æµªå¾®åš</a>
+                        </li>
+                        <li>
+                            <a href="javascript:if(confirm('https://github.com/SegmentFault  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/SegmentFault'" tppabs="https://github.com/SegmentFault" target="_blank" class="entypo-facebook icon-sn-github">Github</a>
+                        </li>
+                        <li>
+                            <a href="javascript:if(confirm('https://twitter.com/segment_fault  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://twitter.com/segment_fault'" tppabs="https://twitter.com/segment_fault" target="_blank" class="entypo-twitter icon-sn-twitter">Twitter</a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
+            <dl class="col-sm-2 site-link" id="license">
+                <dt>æ¡æ¬¾</dt>
+                <dd><a href="javascript:if(confirm('https://segmentfault.com/tos  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/tos'" tppabs="https://segmentfault.com/tos">æœåŠ¡æ¡æ¬¾</a></dd>
+                <dd><a href="javascript:if(confirm('https://creativecommons.org/licenses/by-nc-nd/4.0/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://creativecommons.org/licenses/by-nc-nd/4.0/'" tppabs="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">å†…å®¹è®¸å¯</a></dd>
+                <dd>
+                    <a href="javascript:if(confirm('https://segmentfault.com/app  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://segmentfault.com/app'" tppabs="https://segmentfault.com/app" class="clearfix mt10 block"><img src="../../static.segmentfault.com/v-5a55e741/page/img/app/appQrcode.png" tppabs="https://static.segmentfault.com/v-5a55e741/page/img/app/appQrcode.png" class="app-qrcode"></a>
+                    <div class="app-download-desc">
+                        <p>æ‰«ä¸€æ‰«ä¸‹è½½ App</p>
+                    </div>
+                    
+                </dd>
+            </dl>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2011-2018 SegmentFault. å½“å‰å‘ˆç°ç‰ˆæœ¬ 17.06.16<br>
+            <a href="javascript:if(confirm('http://www.miibeian.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.miibeian.gov.cn/'" tppabs="http://www.miibeian.gov.cn/" rel="nofollow">æµ™ICPå¤‡ 15005796å·-2</a> &nbsp;
+            <a target="_blank" href="javascript:if(confirm('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002000  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002000'" tppabs="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002000" rel="nofollow">æµ™å…¬ç½‘å®‰å¤‡ 33010602002000å·</a>
+            <span class="ml5">æ­å·å †æ ˆç§‘æŠ€æœ‰é™å…¬å¸ç‰ˆæƒæ‰€æœ‰</span>
+            <P class="mt30">CDN å­˜å‚¨æœåŠ¡ç”± <a target="_blank" href="javascript:if(confirm('https://www.upyun.com/?utm_source=segmentfault&utm_medium=link&utm_campaign=upyun&md=segmentfault  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.upyun.com/?utm_source=segmentfault&utm_medium=link&utm_campaign=upyun&md=segmentfault'" tppabs="https://www.upyun.com/?utm_source=segmentfault&utm_medium=link&utm_campaign=upyun&md=segmentfault">åˆæ‹äº‘</a> èµåŠ©æä¾› </p>
+        </div>
+        <p class="text-center">
+            <a class="js__view--selector hidden-sm hidden-md hidden-lg" data-action="mobile" href="javascript:;">ç§»åŠ¨ç‰ˆ</a>
+            <a class="js__view--selector hidden-sm hidden-md hidden-lg" data-action="desktop" href="javascript:;">æ¡Œé¢ç‰ˆ</a>
+        </p>
+    </div>
+</footer>
+
+<div id="fixedTools" class="hidden-xs hidden-sm">
+    <a id="backtop" class="hidden border-bottom" href="#">å›é¡¶éƒ¨</a>
+</div>
+
+<script id="loginModal" type="text/template">
+    <div class="row bg-white login-modal">
+        <div class="col-md-4 col-sm-12 col-md-push-7 login-wrap">
+            <h1 class="h4 text-muted login-title">ç”¨æˆ·ç™»å½•</h1>
+            <form action="/api/user/login" method="POST" role="form" class="mt30">
+                <div class="form-group">
+                    <label for="username" class="control-label">æ‰‹æœºå· æˆ– Email</label>
+                    <input type="text" class="form-control" name="username" required placeholder="11 ä½æ‰‹æœºå· æˆ– Email"
+                           autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">å¯†ç </label><span class="pull-right"><a
+                                href="https://segmentfault.com/user/forgot">å¿˜è®°å¯†ç </a></span>
+                    <input type="password" class="form-control" name="password" required placeholder="å¯†ç ">
+                </div>
+                <div class="form-group clearfix">
+                    <div class="checkbox pull-left">
+                        <label><input name="remember" type="checkbox" value="1" checked> è®°ä½ç™»å½•çŠ¶æ€</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right pl20 pr20"
+                            onclick='ga("send", "event", "email login button", "clicked", "login modal");'>ç™»å½•
+                    </button>
+                </div>
+            </form>
+            <p class="h4 text-muted visible-xs-block h4">å¿«é€Ÿç™»å½•</p>
+            <div class="widget-login mt30">
+                <p class="text-muted mt5 mr10 pull-left hidden-xs">å¿«é€Ÿç™»å½•</p>
+                <a href="https://segmentfault.com/user/oauth/google" class=""
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "google"});'><span
+                            class="icon-sn-google"></span> <strong class="visible-xs-inline">Google è´¦å·</strong></a>
+                <a href="https://segmentfault.com/user/oauth/github" class=""
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "github"});");'><span
+                            class="icon-sn-github"></span> <strong class="visible-xs-inline">Github è´¦å·</strong></a>
+                <a href="https://segmentfault.com/user/oauth/weibo" class=""
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "weibo"});'><span
+                            class="icon-sn-weibo"></span> <strong class="visible-xs-inline">æ–°æµªå¾®åšè´¦å·</strong></a>
+                <a href="https://segmentfault.com/user/oauth/qq" class=""
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span
+                            class="icon-sn-qq"></span> <strong class="visible-xs-inline">QQ è´¦å·</strong></a>
+                <a href="https://segmentfault.com/user/oauth/weixin" class=""
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span
+                            class="icon-sn-weixin"></span> <strong class="visible-xs-inline">å¾®ä¿¡è´¦å·</strong></a>
+                <a href="https://segmentfault.com/user/oauth/linkedin" class=""
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "linkedin"});'><span
+                            class="icon-sn-linkedin"></span> <strong class="visible-xs-inline">LinkedIn è´¦å·</strong></a>
+                <span id="loginShowMore" style="cursor: pointer" class="mb5"><span class="icon-sn-dotted"></span><strong
+                            class="visible-xs-inline">â€¢â€¢â€¢</strong></span>
+                <a href="https://segmentfault.com/user/oauth/twitter" class=" hidden"
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "twitter"});'><span
+                            class="icon-sn-twitter"></span> <strong class="visible-xs-inline">Twitter è´¦å·</strong></a>
+                <a href="https://segmentfault.com/user/oauth/facebook" class=" hidden"
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "facebook"});'><span
+                            class="icon-sn-facebook"></span> <strong class="visible-xs-inline">Facebook è´¦å·</strong></a>
+                <a href="https://segmentfault.com/user/oauth/douban" class=" hidden"
+                   onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "douban"});'><span
+                            class="icon-sn-douban"></span> <strong class="visible-xs-inline">è±†ç“£è´¦å·</strong></a>
+            </div>
+        </div>
+        <div class="login-vline hidden-xs hidden-sm"></div>
+        <div class="col-md-4 col-md-pull-3 col-sm-12 login-wrap">
+            <h1 class="h4 text-muted login-title">æ³¨å†Œæ–°è´¦å·</h1>
+            <form action="/api/user/phone/register" method="POST" role="form" class="mt30">
+                <div class="form-group">
+                    <label for="name" class="control-label">åå­—</label>
+                    <input type="text" class="form-control" name="name" required placeholder="çœŸå®å§“åæˆ–å¸¸ç”¨æ˜µç§°">
+                </div>
+
+
+                <div class="form-group js-register-switch-box">
+                    <div class="mb10">
+                        <label class="radio-inline">
+                            <input type="radio" name="register_type" value="phone" checked> ç”¨æ‰‹æœºå·æ³¨å†Œ
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="register_type" value="mail"> ç”¨ Email æ³¨å†Œ
+                        </label>
+                    </div>
+                    <div class="js-register-switch-content">
+                        <input type="phone" class="form-control mb15" name="phone" required placeholder="ä»…æ”¯æŒå¤§é™†æ‰‹æœºå·"
+                               autocomplete="off">
+                        <div class="captchaInput mb10 hidden">
+                            <label class="required control-label mt5">éªŒè¯ç </label>
+                            <input type="text" class="form-control" name="cap" placeholder="è¯·è¾“å…¥ä¸‹æ–¹çš„éªŒè¯ç åï¼Œå†ç‚¹å‡»è·å–éªŒè¯ç ">
+                            <div class="mt10 ">
+                                <a id="loginReloadCaptcha" href="javascript:void(0)">
+                                <img data-src="/user/captcha?w=240&h=50" class="captcha" width="240" height="50"/></a>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input name="code" type="text" class="form-control js-user-login__phone-code-value" placeholder="çŸ­ä¿¡éªŒè¯ç ">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default js-user-login__phone-vaild-btn" style="width:96px;" type="button">
+                                è·å–éªŒè¯ç </button>
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password" class="control-label">å¯†ç </label>
+                    <input type="password" class="form-control" name="password" required placeholder="ä¸å°‘äº 6 ä½">
+                </div>
+                <div class="form-group" style="display:none;">
+                    <label class="required control-label">éªŒè¯ç </label>
+                    <input type="text" class="form-control" id="captcha" name="captcha" placeholder="è¯·è¾“å…¥ä¸‹æ–¹çš„éªŒè¯ç ">
+                    <div class="mt10"><a id="loginReloadCaptcha" href="javascript:void(0)"><img
+                                    data-src="/user/captcha?w=240&h=50" class="captcha" width="240" height="50"/></a>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="checkbox pull-left">
+                        åŒæ„å¹¶æ¥å—<a href="https://segmentfault.com/tos" target="_blank">ã€ŠæœåŠ¡æ¡æ¬¾ã€‹</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary pl20 pr20 pull-right"
+                            onclick='ga("send", "event", "email register button", "clicked", "login modal");'>æ³¨å†Œ
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center text-muted mt30">
+    </div>
+</script>
+<script id="bindPhoneModal" type="text/template">
+    <div class="bg-white bindphone-model">
+        <div class="alert alert-warning" role="alert">
+            ä¸ºäº†ä¿è¯è´¦å·å®‰å…¨ï¼Œè¯·å…ˆç»‘å®šæ‰‹æœº
+        </div>
+        <div>
+            <form class="form-horizontal form__bindphone-apply" style="background-color:#fff;padding:0;">
+                <div class="form-group ">
+                    <label for="phoneNumber" class="col-sm-3 control-label required" >æ‰‹æœºå·ç </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control bindphone--phone" id="phoneNumber" name="phone" placeholder="ä»…åªæ”¯æŒå¤§é™†æ‰‹æœºå·">
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="form-group">
+                    <label for="authCode" class="col-sm-3 control-label required">éªŒè¯ç </label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control bindphone--code" name="code" placeholder="çŸ­ä¿¡éªŒè¯ç ">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default user-bind__phone-vaild-btn" type="button">è·å–éªŒè¯ç </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</script>
+
+
+<script>
+    window.serverTime = 1515691072000;
+</script>
+
+<script>
+    (function (w) {
+        w.SF = {
+            staticUrl: "https://static.segmentfault.com/v-5a55e741"
+        };
+        w.SF.token = (function () {
+    var _ESR = 'a0d'//'2ip'
++//'G'
+'da7'+//'GRP'
+'920'+'efE'//'efE'
++//'uW'
+'6'+'96'//'iLj'
++'2'//'UW'
++'b'//'hFE'
++//'Xz'
+'Xz'+'5f7'//'o9X'
++''///*'e'*/'e'
++//'Xkk'
+'7'+'75f'//'WI2'
++//'K'
+'8'+'1'//'xk'
++//'k8'
+'5'+'ce6'//'kg'
++'83'//'D'
++//'Bv'
+'591', _xTeV0y = [[9,12],[14,16]];
+
+    for (var i = 0; i < _xTeV0y.length; i ++) {
+        _ESR = _ESR.substring(0, _xTeV0y[i][0]) + _ESR.substring(_xTeV0y[i][1]);
+    }
+
+    return _ESR;
+})();;
+    })(window);
+
+                var lock = {
+        type: "",
+        text: '',
+        table: {"ban_post":[1,"https://segmentfault.com/u4f60/u5df2/u7ecf/u88ab/u7981/u8a00, /u65e0/u6cd5/u8fdb/u884c/u6b64/u64cd/u4f5c, /u5982/u6709/u7591/u4e49/u8bf7/u63d0/u4ea4/u7533/u8bc9, /u6216/u8005/u53d1/u90ae/u4ef6/u5230pr@segmentfault.com"]}
+    };
+
+        var ddosMode = false;
+    
+    (function (currentUrl) {
+        if (typeof URL != 'undefined') {
+            // æµ‹è¯•ç¯å¢ƒ
+            if ('https://segmentfault.com' === '//localhost:3000') return
+
+            var baseUrl = new URL('https://segmentfault.com');
+
+            if (baseUrl.protocol != currentUrl.protocol
+                || baseUrl.host != currentUrl.host) {
+                window.location.href = baseUrl.protocol + '//' + baseUrl.host
+                    + currentUrl.pathname + currentUrl.search + currentUrl.hash;
+            }
+        }
+    })(window.location);
+</script>
+     <script crossorigin src="../../static.segmentfault.com/v-5a55e741/3rd/assets.js" tppabs="https://static.segmentfault.com/v-5a55e741/3rd/assets.js"></script>
+         
+    <script crossorigin src="../../static.segmentfault.com/v-5a55e741/blog/script/post.min.js" tppabs="https://static.segmentfault.com/v-5a55e741/blog/script/post.min.js"></script>
+    
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-918487-8']);
+    _gaq.push(['_trackPageview']);
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../../www.google-analytics.com/analytics.js'/*tpa=https://www.google-analytics.com/analytics.js*/, 'ga');
+
+                
+        
+
+            
+
+    ga('create', 'UA-918487-8', 'auto', {
+        'userID'
+    : 0,
+        'createdTime'
+    : 0,
+        'now'
+    : 1515691073,
+        'allowLinker'
+    : true });
+    ga('require', 'linker');
+    ga('linker:autoLink', ['https://segmentfault.com/a/docs.segmentfault.com'] );
+    ga('set', 'dimension1', 'guest');
+    ga('send', 'pageview');
+
+</script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "../../hm.baidu.com/hm.js-e23800c454aa573c0ccb16b52665ac26"/*tpa=https://hm.baidu.com/hm.js?e23800c454aa573c0ccb16b52665ac26*/;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+        <script type="text/javascript" src="../../afpmm.alicdn.com/g/mm/afp-cdn/JS/k.js" tppabs="https://afpmm.alicdn.com/g/mm/afp-cdn/JS/k.js"></script>
+            <script>
+                    ac_keywords_targeting = "javascript";
+                _acM({
+            aid: "mm_124884735_33830642_145440102",
+            format: 1,
+            mode: 1,
+            gid: 1,
+            destid: "mm_124884735_33830642_145440102",
+            sendkeywords: 1,
+            serverbaseurl: "afpeng.alimama.com/"
+        });
+        </script>
+            <script>
+                    ac_keywords_targeting = "javascript";
+                _acM({
+            aid: "mm_124884735_33830642_120290173",
+            format: 1,
+            mode: 1,
+            gid: 1,
+            destid: "mm_124884735_33830642_120290173",
+            sendkeywords: 1,
+            serverbaseurl: "afpeng.alimama.com/"
+        });
+        </script>
+     
+
+        <script type="text/javascript" src="../../afpmm.alicdn.com/g/mm/afp-cdn/JS/k.js" tppabs="https://afpmm.alicdn.com/g/mm/afp-cdn/JS/k.js"></script>
+            <script>
+                    ac_keywords_targeting = "javascript";
+                _acM({
+            aid: "mm_124884735_33830642_143436142",
+            format: 1,
+            mode: 1,
+            gid: 1,
+            destid: "mm_124884735_33830642_143436142",
+            sendkeywords: 1,
+            serverbaseurl: "afpeng.alimama.com/"
+        });
+        </script>
+     
+
+</body>
+</html>
+
